@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="root"></div>
+
+    <!-- <script>
+  
+    const headding = document.createElement("h1");            //created a variable and with that created element by using docu.createElement()
+    headding.innerHTML = "Namaste JS";                      //By using the variable and .innerHtml we added a text 
+    const root = document.getElementById("root");         // For accessing the div whcih had an id root we created a variable root and used through DOM 
+    root.appendChild(headding);                           // But why do we need to push headding into div? Beacuse if we Don't push into div h1 cannot be created
+                                                          // we have pushed the headding into the div by using appendChild
+  
+    </script> -->
+
+<!-- REACt cannot directly used its not a built in type as JS but we can bring the REACT using CDN{content Delivary Network} links -->
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> <!---core of react-->
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> <!---Used to modify DOM-->
+
+
+<!-- <script>
+
+    const headding = React.createElement("h1", {}, "Namaste React");   //Created a element h1
+    const root = ReactDOM.createRoot(document.getElementById("root")); // accessing the div so that react control div
+    root.render(headding);                                            // pushed the element into the div
+
+</script> -->
+
+
+<!---Writing react in the seperate file-->
+<script src="React.js"></script>
+
+</body>
+</html>
