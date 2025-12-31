@@ -1,0 +1,32 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "This is Namaste React by vijay",
+  "keywords": [
+    "Namaste",
+    "React"
+  ],
+  "homepage": "https://github.com/vijaydurgasi/Namaste-React#readme",
+  "bugs": {
+    "url": "https://github.com/vijaydurgasi/Namaste-React/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vijaydurgasi/Namaste-React.git"
+  },
+  "license": "ISC",
+  "author": "vijay Durgasi",
+  "type": "commonjs",
+  "scripts": {
+    "test": "just",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.3"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
