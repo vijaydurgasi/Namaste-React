@@ -1,3 +1,5 @@
+import User from "./User";
+
 const About = () => {
   return (
     <div className="about-container">
@@ -42,6 +44,8 @@ const About = () => {
         real-world projects to strengthen my frontend development skills. This
         app is part of my <strong>Namaste React</strong> journey.
       </p>
+
+      <User />
     </div>
   );
 };

@@ -45,7 +45,6 @@
 
 .res-card {
     width: 200px;
-    /* height: 380px; */
     border: 1px solid #dbcdcd;
     font-size: 16px;
     margin: 6px 0px;
@@ -58,7 +57,8 @@
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    
+    text-decoration: none;
+    color: black;
 }
 
 .res-card:hover {
@@ -312,4 +312,20 @@
 
 .contact-btn:hover {
   background-color: #e64500;
+}
+
+.res-link{
+  text-decoration: none;
+  color: black;
+}
+
+.user-card{
+  padding: 10px;
+  border: 1px solid black;
+  width: 350px;
+}
+
+.nav-links{
+  text-decoration: none;
+  color: black;
 }

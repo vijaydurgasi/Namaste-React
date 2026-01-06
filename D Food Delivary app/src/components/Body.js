@@ -1,44 +1,22 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./shimmer";
+import { Link } from "react-router-dom";
+import useRestaurantApi from "../../Utils/useRestaurantApi";
 
 const Body = () => {
-  
-  const [listOfRestaurants, setlistOfRestaurants] = useState([]);
-
-  const [filteredRestaurant, setfilteredRestaurant] = useState([]);
 
   const [searchText, setSearchText] = useState("");
 
+  const {
+    listOfRestaurants,
+    filteredRestaurant,
+    setfilteredRestaurant,
+    loading
+  } = useRestaurantApi();
 
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.406498&lng=78.47724389999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-    );
-
-    const json = await data.json();
-    console.log(json);
-
-    const restaurants =
-      json?.data?.cards
-        ?.map((c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-        ?.flat()
-        ?.filter(Boolean);
-
-    const uniqueRestaurants = Array.from(
-      new Map(restaurants.map((r) => [r.info.id, r])).values()
-    );
-    setfilteredRestaurant(uniqueRestaurants);
-    setlistOfRestaurants(uniqueRestaurants);
-  };
-
- 
-  if (listOfRestaurants.length === 0) {
-    return <Shimmer/>;
+  if (loading) {
+    return <Shimmer />;
   }
 
   return (
@@ -83,13 +61,10 @@ const Body = () => {
       </div>
 
       <div className="res-container">
-        {filteredRestaurant.map((restaurant, index) => (
-          <RestaurantCard
-            // key={`${restaurant.info.id}-${index}`}
-            key={restaurant.info.id}
-
+        {filteredRestaurant.map((restaurant) => (
+          <Link key={restaurant.info.id} to={"/restaurants/" + restaurant.info.id} className="res-link"><RestaurantCard
             resData={restaurant}
-          />
+          /></Link>
         ))}
       </div>
     </div>
