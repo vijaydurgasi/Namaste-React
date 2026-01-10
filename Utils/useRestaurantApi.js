@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const useRestaurantApi = () => {
 
@@ -25,6 +25,7 @@ const useRestaurantApi = () => {
                 ?.map((c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants)
                 ?.flat()
                 ?.filter(Boolean);
+        console.log(restaurants, "Restaurants list");
 
         const uniqueRestaurants = Array.from(
             new Map(restaurants.map((r) => [r.info.id, r])).values()
@@ -33,11 +34,12 @@ const useRestaurantApi = () => {
         setlistOfRestaurants(uniqueRestaurants);
         setLoading(false);
     };
+
     return {
         listOfRestaurants,
         filteredRestaurant,
         setfilteredRestaurant,
-        loading
+        loading,
     };
 };
 

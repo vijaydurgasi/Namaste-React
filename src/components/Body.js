@@ -1,9 +1,10 @@
 import { useState } from "react";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { WithPromotedLabel } from "./RestaurantCard";
 import Shimmer from "./shimmer";
 import { Link } from "react-router-dom";
 import useRestaurantApi from "../../Utils/useRestaurantApi";
 import useOnlineStatus from "../../Utils/useOnlineStatus";
+import TopRestaurantChains from "./TopRestaurantsChains";
 
 const Body = () => {
 
@@ -17,6 +18,12 @@ const Body = () => {
   } = useRestaurantApi();
 
   const onlineStatus = useOnlineStatus();
+
+  const RestaurantCardPromoted = WithPromotedLabel(RestaurantCard);
+
+  const [showTopChains, setShowTopChains] = useState(true);
+
+  const topRestaurantChains = listOfRestaurants.filter((res) => res.info?.avgRating > 4.5);
 
   if (onlineStatus === false) return <h1>Looks like you're Offline please check your Network connection</h1>
 
@@ -65,11 +72,20 @@ const Body = () => {
         </button>
       </div>
 
+      <TopRestaurantChains
+        restaurants={topRestaurantChains}
+        show={showTopChains}
+        onToggle={() => setShowTopChains((prev) => !prev)}
+      />
+
+
       <div className="flex flex-wrap gap-5 p-5">
         {filteredRestaurant.map((restaurant) => (
-          <Link key={restaurant.info.id} to={"/restaurants/" + restaurant.info.id} className="no-underline text-black"><RestaurantCard
-            resData={restaurant}
-          /></Link>
+          <Link key={restaurant.info.id} to={"/restaurants/" + restaurant.info.id} className="no-underline text-black">
+            {
+              restaurant.info.avgRating >= 4.7 ? <RestaurantCardPromoted resData={restaurant} /> : <RestaurantCard resData={restaurant} />
+            }
+          </Link>
         ))}
       </div>
 
@@ -78,5 +94,3 @@ const Body = () => {
 };
 
 export default Body;
-
-

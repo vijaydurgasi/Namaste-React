@@ -16,16 +16,16 @@ const Header = () => {
             </div>
             <div className="nav-items">
                 <ul className="flex item-center gap-8 font-bold mt-24 mr-2">
-                    <li>
-                        <Link className="no-underline text-black" to="/">Home</Link>
+                    <li className="no-underline text-black">
+                        <Link to="/">Home</Link>
                     </li>
 
-                    <li>
-                        <Link className="no-underline text-black" to="/about">About Us</Link>
+                    <li className="no-underline text-black">
+                        <Link to="/about">About Us</Link>
                     </li>
 
-                    <li>
-                        <Link className="no-underline text-black" to="/contact">Contact Us</Link>
+                    <li className="no-underline text-black">
+                        <Link to="/contact">Contact Us</Link>
                     </li>
 
                     <li>Cart</li>
