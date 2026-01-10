@@ -4,7 +4,7 @@ import Shimmer from "./shimmer";
 import { Link } from "react-router-dom";
 import useRestaurantApi from "../../Utils/useRestaurantApi";
 import useOnlineStatus from "../../Utils/useOnlineStatus";
-import TopRestaurantChains from "./TopRestaurantsChains";
+import Recommend from "./Recommend";
 
 const Body = () => {
 
@@ -21,9 +21,9 @@ const Body = () => {
 
   const RestaurantCardPromoted = WithPromotedLabel(RestaurantCard);
 
-  const [showTopChains, setShowTopChains] = useState(true);
+  const [showTopChains, setShowTopChains] = useState(false);
 
-  const topRestaurantChains = listOfRestaurants.filter((res) => res.info?.avgRating > 4.5);
+  const recommendRestaurants = listOfRestaurants.filter((res) => res.info?.avgRating >= 4);
 
   if (onlineStatus === false) return <h1>Looks like you're Offline please check your Network connection</h1>
 
@@ -63,21 +63,21 @@ const Body = () => {
           className="px-4 py-2 text-sm rounded-md cursor-pointer border transition hover:bg-gray-100"
           onClick={() => {
             const filtered = listOfRestaurants.filter(
-              (res) => res.info && res.info.avgRating > 4.5
+              (res) => res.info && res.info.avgRating >= 4.7
             );
             setfilteredRestaurant(filtered);
           }}
         >
           Top Rated Restaurant
         </button>
+
       </div>
 
-      <TopRestaurantChains
-        restaurants={topRestaurantChains}
+      <Recommend
+        restaurants={recommendRestaurants}
         show={showTopChains}
         onToggle={() => setShowTopChains((prev) => !prev)}
       />
-
 
       <div className="flex flex-wrap gap-5 p-5">
         {filteredRestaurant.map((restaurant) => (
