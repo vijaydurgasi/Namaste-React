@@ -10,24 +10,25 @@ const useRestaurantApi = () => {
     }, []);
 
     const fetchData = async () => {
-        const data = await fetch(
-            "https://namastedev.com/api/v1/listRestaurants"
+        const res = await fetch(
+            "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.406498&lng=78.47724389999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
         );
-        const json = await data.json();
-        console.log("FULL API RESPONSE:", json);
 
-
-        const cards = json?.data?.data?.cards ?? [];
-
-        const restaurantCard = cards.find(
-            (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
-        );
+        const json = await res.json();
 
         const restaurants =
-            restaurantCard?.card?.card?.gridElements?.infoWithStyle?.restaurants ?? [];
+            json?.data?.cards
+                ?.map(
+                    (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
+                )
+                ?.flat()
+                ?.filter(Boolean) || [];
 
+        // ✅ REMOVE DUPLICATES HERE
         const uniqueRestaurants = Array.from(
-            new Map(restaurants.map((r) => [r.info.id, r])).values()
+            new Map(
+                restaurants.map((res) => [res.info.id, res])
+            ).values()
         );
 
         setListOfRestaurants(uniqueRestaurants);

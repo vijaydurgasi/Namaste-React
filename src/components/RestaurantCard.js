@@ -1,5 +1,4 @@
-import { CDN_URL } from "../../Utils/constant";
-import { getImageUrl } from "../../Utils/constant";
+import { CDN_URL, FALLBACK_IMAGE } from "../../Utils/constant";
 
 export const RestaurantCard = ({ resData }) => {
     const {
@@ -10,16 +9,19 @@ export const RestaurantCard = ({ resData }) => {
         avgRating,
         sla
     } = resData?.info;
+
     return (
-        <div className="w-[200px] h-[320] border border-[#dbcdcd] p-2.5 rounded-x1 bg-white
+        <div className="w-[200px] h-[320px] border border-[#dbcdcd] p-2.5 rounded-x1 bg-white
          flex flex-col text-center transition-all duratio-300 hover:scale-105 
          hover:shadow-xl cursor-pointer rounded-xl">
 
             <img
-                className="w-full aspect-[4/3] object-cover rounded-lg"
-                src={getImageUrl(cloudinaryImageId)}
+                src={CDN_URL + cloudinaryImageId}
+                alt={name}
+                className="w-full h-[140px] object-cover rounded-lg"
                 onError={(e) => {
-                    e.currentTarget.src = "/images/food-placeholder.jpg";
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = FALLBACK_IMAGE;
                 }}
             />
 
