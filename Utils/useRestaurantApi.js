@@ -24,7 +24,6 @@ const useRestaurantApi = () => {
                 ?.flat()
                 ?.filter(Boolean) || [];
 
-        // ✅ REMOVE DUPLICATES HERE
         const uniqueRestaurants = Array.from(
             new Map(
                 restaurants.map((res) => [res.info.id, res])

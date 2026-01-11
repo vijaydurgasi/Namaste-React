@@ -1,120 +1,83 @@
-import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { CDN_URL, MENU_URL } from "../../Utils/constant";
-import Shimmer from "./shimmer";
+import { useState } from "react";
+import mockMenu from "../../Utils/mockMenu";
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
 
-  const [resInfo, setResInfo] = useState(null);
-  const [restaurantInfo, setRestaurantInfo] = useState(null);
-  const [menuSections, setMenuSections] = useState([]);
+  const menuData = mockMenu[resId];
 
-  useEffect(() => {
-    fetchMenu();
-  }, []);
+  const [openIndex, setOpenIndex] = useState(null);
 
-  const fetchMenu = async () => {
-    try {
-      const data = await fetch(MENU_URL + resId);
-      const json = await data.json();
-
-      setResInfo(json);
-
-      if (json?.status === false) {
-        setMenuSections([]);
-        return;
-      }
-
-      const cards = json?.data?.cards ?? [];
-
-      // ✅ Restaurant basic info (if present)
-      const infoCard = cards.find(
-        (c) => c?.card?.card?.info
-      )?.card?.card?.info;
-
-      setRestaurantInfo(infoCard || null);
-
-      // ✅ Actual menu items
-      const menuCards = cards.filter(
-        (c) =>
-          c?.card?.card?.["@type"] ===
-          "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
-      );
-
-      setMenuSections(menuCards);
-    } catch (err) {
-      console.error("Menu API error", err);
-      setMenuSections([]);
-    }
-  };
-
-  // ✅ Shimmer ONLY while API is loading
-  if (resInfo === null) {
-    return <Shimmer />;
+  if (!menuData) {
+    return (
+      <h2 className="text-center mt-10 text-gray-500">
+        Menu not available
+      </h2>
+    );
   }
 
+  const toggleCategory = (index) => {
+    setOpenIndex((prev) => (prev === index ? null : index));
+  };
+
   return (
-    <div className="p-6 max-w-3xl mx-auto">
-      {/* Restaurant Info */}
-      {restaurantInfo && (
-        <div className="mb-6 border-b pb-4">
-          <img
-            src={CDN_URL + restaurantInfo.cloudinaryImageId}
-            alt={restaurantInfo.name}
-            className="w-48 rounded-lg mb-3"
-          />
+    <div className="max-w-[800px] mx-auto px-4 py-6">
 
-          <h1 className="text-2xl font-bold">{restaurantInfo.name}</h1>
-          <p className="text-gray-600">
-            {restaurantInfo.cuisines?.join(", ")}
-          </p>
-          <p className="text-sm text-gray-500">
-            {restaurantInfo.areaName}
-          </p>
+      <h1 className="text-2xl font-bold mb-6">
+        {menuData.restaurantName}
+      </h1>
 
-          <div className="flex gap-4 mt-2 text-sm">
-            <span>⭐ {restaurantInfo.avgRating}</span>
-            <span>{restaurantInfo.totalRatingsString}</span>
+      {menuData.menu.map((section, index) => (
+        <div
+          key={section.category}
+          className="border-b last:border-b-2 shadow-lg p-6 rounded-lg bg-gray-50"
+        >
+
+          <div
+            onClick={() => toggleCategory(index)}
+            className="flex justify-between items-center py-4 cursor-pointer"
+          >
+            <div className="font-bold text-lg">
+              {section.category}
+              <span className="text-gray-500 text-sm ml-2">
+                ({section.items.length})
+              </span>
+            </div>
+
+            <span
+              className={`transition-transform duration-300 ${openIndex === index ? "rotate-180" : ""
+                }`}
+            >
+              ⌄
+            </span>
           </div>
-        </div>
-      )}
 
-      {/* Menu Section */}
-      <h2 className="text-xl font-semibold mb-4">Menu</h2>
-
-      {menuSections.length > 0 ? (
-        menuSections.map((section) => (
-          <div key={section.card.card.title} className="mb-6">
-            <h3 className="font-semibold text-lg mb-2">
-              {section.card.card.title}
-            </h3>
-
-            <ul className="space-y-2">
-              {section.card.card.itemCards.map((item) => (
-                <li
-                  key={item.card.info.id}
-                  className="flex justify-between border-b pb-2"
+          {openIndex === index && (
+            <div className="pb-4 space-y-4">
+              {section.items.map((item) => (
+                <div
+                  key={item.id}
+                  className="flex justify-between items-start"
                 >
-                  <span>
-                    {item.card.info.name}{" "}
-                    {item.card.info.isVeg ? "🟢" : "🔴"}
-                  </span>
-                  <span>
-                    ₹
-                    {(item.card.info.price ??
-                      item.card.info.defaultPrice) / 100}
-                  </span>
-                </li>
+                  <div className="max-w-[75%]">
+                    <div className="font-medium">
+                      {item.isVeg ? "🟢" : "🔴"} {item.name}
+                    </div>
+                    <div className="text-sm text-gray-500 mt-1">
+                      {item.description}
+                    </div>
+                  </div>
+
+                  <div className="font-semibold">
+                    ₹{item.price}
+                  </div>
+                </div>
               ))}
-            </ul>
-          </div>
-        ))
-      ) : (
-        <p className="text-gray-500">
-          Menu not available for this restaurant
-        </p>
-      )}
+            </div>
+          )}
+        </div>
+      ))}
     </div>
   );
 };
