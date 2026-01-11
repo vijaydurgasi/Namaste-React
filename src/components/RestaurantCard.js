@@ -1,6 +1,7 @@
 import { CDN_URL } from "../../Utils/constant";
+import { getImageUrl } from "../../Utils/constant";
 
-const RestaurantCard = ({ resData }) => {
+export const RestaurantCard = ({ resData }) => {
     const {
         cloudinaryImageId,
         name,
@@ -16,7 +17,12 @@ const RestaurantCard = ({ resData }) => {
 
             <img
                 className="w-full aspect-[4/3] object-cover rounded-lg"
-                src={CDN_URL + cloudinaryImageId} />
+                src={getImageUrl(cloudinaryImageId)}
+                onError={(e) => {
+                    e.currentTarget.src = "/images/food-placeholder.jpg";
+                }}
+            />
+
             <h3 className="font-semibold mt-2" >{name}</h3>
             <p className="text-sm text-gray-600 min-h-[40px] leading-5 line-clamp-2">{(cuisines || []).join(", ")}</p>
             <h3 className="text-sm font-medium ">{costForTwo}</h3>

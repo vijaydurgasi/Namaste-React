@@ -1,11 +1,8 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 const useRestaurantApi = () => {
-
-    const [listOfRestaurants, setlistOfRestaurants] = useState([]);
-
-    const [filteredRestaurant, setfilteredRestaurant] = useState([]);
-
+    const [listOfRestaurants, setListOfRestaurants] = useState([]);
+    const [filteredRestaurant, setFilteredRestaurant] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -14,31 +11,34 @@ const useRestaurantApi = () => {
 
     const fetchData = async () => {
         const data = await fetch(
-            "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.406498&lng=78.47724389999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+            "https://namastedev.com/api/v1/listRestaurants"
+        );
+        const json = await data.json();
+        console.log("FULL API RESPONSE:", json);
+
+
+        const cards = json?.data?.data?.cards ?? [];
+
+        const restaurantCard = cards.find(
+            (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
         );
 
-        const json = await data.json();
-        console.log(json);
-
         const restaurants =
-            json?.data?.cards
-                ?.map((c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-                ?.flat()
-                ?.filter(Boolean);
-        console.log(restaurants, "Restaurants list");
+            restaurantCard?.card?.card?.gridElements?.infoWithStyle?.restaurants ?? [];
 
         const uniqueRestaurants = Array.from(
             new Map(restaurants.map((r) => [r.info.id, r])).values()
         );
-        setfilteredRestaurant(uniqueRestaurants);
-        setlistOfRestaurants(uniqueRestaurants);
+
+        setListOfRestaurants(uniqueRestaurants);
+        setFilteredRestaurant(uniqueRestaurants);
         setLoading(false);
     };
 
     return {
         listOfRestaurants,
         filteredRestaurant,
-        setfilteredRestaurant,
+        setFilteredRestaurant,
         loading,
     };
 };

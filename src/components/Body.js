@@ -13,7 +13,7 @@ const Body = () => {
   const {
     listOfRestaurants,
     filteredRestaurant,
-    setfilteredRestaurant,
+    setFilteredRestaurant,
     loading,
   } = useRestaurantApi();
 
@@ -52,7 +52,7 @@ const Body = () => {
                   res.info.name &&
                   res.info.name.toLowerCase().includes(searchText.toLowerCase())
               );
-              setfilteredRestaurant(filteredSearch);
+              setFilteredRestaurant(filteredSearch);
             }}
           >
             Search
@@ -65,7 +65,7 @@ const Body = () => {
             const filtered = listOfRestaurants.filter(
               (res) => res.info && res.info.avgRating >= 4.7
             );
-            setfilteredRestaurant(filtered);
+            setFilteredRestaurant(filtered);
           }}
         >
           Top Rated Restaurant
