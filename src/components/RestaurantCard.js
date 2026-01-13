@@ -1,6 +1,11 @@
 import { CDN_URL, FALLBACK_IMAGE } from "../../Utils/constant";
+import { useContext } from "react";
+import UserContext from "../../Utils/UserContext";
 
 export const RestaurantCard = ({ resData }) => {
+
+    const { loggedInUser } = useContext(UserContext);
+
     const {
         cloudinaryImageId,
         name,

@@ -1,9 +1,19 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
+import UserContext from "../../Utils/UserContext";
+import useOnlineStatus from "../../Utils/useOnlineStatus";
 
 const Header = () => {
 
     const [btn_inout, setbtn_inout] = useState("Login");
+
+    const onlineStatus = useOnlineStatus();
+
+    const { loggedInUser } = useContext(UserContext);
+
+
+    console.log(loggedInUser, "User logn");
+
 
     return (
         <div className="flex justify-between items- border border-black">
@@ -16,6 +26,9 @@ const Header = () => {
             </div>
             <div className="nav-items">
                 <ul className="flex item-center gap-8 font-bold mt-24 mr-2">
+
+                    <li > onlineStatus : {onlineStatus ? "🟢" : "🔴"}</li>
+
                     <li className="no-underline text-black">
                         <Link to="/">Home</Link>
                     </li>
@@ -34,6 +47,9 @@ const Header = () => {
                         btn_inout === "Login" ? setbtn_inout("Logout") : setbtn_inout("Login");
                     }}
                     >{btn_inout}</button>
+
+                    {/* <li className="font-bold">{loggedInUser}</li> */}
+
                 </ul>
             </div>
         </div>

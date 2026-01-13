@@ -1,12 +1,22 @@
 import { useParams } from "react-router-dom";
-import { useState } from "react";
-import mockMenu from "../../Utils/mockMenu";
+import { useEffect, useState } from "react";
+// import mockMenu from "../../Utils/mockMenu";
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
+
   const [openCategory, setOpenCategory] = useState(null);
 
-  const menuData = mockMenu[resId];
+  // const menuData = mockMenu[resId];
+  const [menuData, setMenuData] = useState(null);
+
+  useEffect(() => {
+    const loadMenu = async () => {
+      const data = await import("../../Utils/mockMenu");
+      setMenuData(data.default[resId]);
+    };
+    loadMenu();
+  }, [resId])
 
   if (!menuData) {
     return (
