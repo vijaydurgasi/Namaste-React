@@ -1,14 +1,16 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-// import mockMenu from "../../Utils/mockMenu";
+import { useDispatch } from "react-redux";
+import { addItem } from "../../Redux/cartSlice";
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
 
   const [openCategory, setOpenCategory] = useState(null);
 
-  // const menuData = mockMenu[resId];
   const [menuData, setMenuData] = useState(null);
+
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const loadMenu = async () => {
@@ -79,8 +81,11 @@ const RestaurantMenu = () => {
                     </p>
                   </div>
 
-                  <button className="border border-green-500 text-green-600 font-semibold px-5 py-1 rounded-lg text-sm hover:bg-green-50">
-                    ADD
+                  <button className="border border-green-500 text-green-600 font-semibold px-5 py-1 rounded-lg text-sm hover:bg-green-50"
+                    onClick={() => {
+                      dispatch(addItem({ name: item.name, price: item.price }));
+                    }}>
+                    ADD TO CART
                   </button>
                 </div>
               ))}

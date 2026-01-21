@@ -2,6 +2,8 @@ import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import UserContext from "../../Utils/UserContext";
 import useOnlineStatus from "../../Utils/useOnlineStatus";
+import { useSelector } from "react-redux";
+import { CART_URL } from "../../Utils/constant";
 
 const Header = () => {
 
@@ -10,10 +12,11 @@ const Header = () => {
     const onlineStatus = useOnlineStatus();
 
     const { loggedInUser } = useContext(UserContext);
+    //  console.log(loggedInUser, "User logn");
 
+    const cartItems = useSelector((store) => store.cart.items);
 
-    console.log(loggedInUser, "User logn");
-
+    const totalItems = cartItems.reduce((sum, item) => sum + (item.quantity || 1), 0);
 
     return (
         <div className="flex justify-between items- border border-black">
@@ -41,7 +44,16 @@ const Header = () => {
                         <Link to="/contact">Contact Us</Link>
                     </li>
 
-                    <li>Cart</li>
+                    <li>
+                        <Link to="/cart">
+                            <img
+                                src={CART_URL}
+                                className="w-6 h-6 object-contain inline-block cursor-pointer"
+                                alt="Cart Icon"
+                            />
+                            ({totalItems})
+                        </Link>
+                    </li>
 
                     <button className=" relative -top-[3px] px-5 py-1 border rounded-md text-sm font-semibold cursor-pointer transition hover:bg-gray-100 " onClick={() => {
                         btn_inout === "Login" ? setbtn_inout("Logout") : setbtn_inout("Login");

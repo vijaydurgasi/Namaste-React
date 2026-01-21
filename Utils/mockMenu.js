@@ -1059,6 +1059,1182 @@ const mockMenu = {
       },
     ],
   },
+  "2097": {
+    restaurantName: "Agrawala Sweets",
+    menu: [
+      {
+        category: "Sweets",
+        items: [
+          { id: "as1", name: "Rasgulla", description: "Spongy cheese balls", price: 150, isVeg: true },
+          { id: "as2", name: "Gulab Jamun", description: "Fried milk balls", price: 140, isVeg: true },
+          { id: "as3", name: "Barfi", description: "Milk fudge", price: 300, isVeg: true },
+          { id: "as4", name: "Laddu", description: "Sweet balls", price: 250, isVeg: true },
+          { id: "as5", name: "Peda", description: "Milk sweet", price: 280, isVeg: true },
+        ],
+      },
+      {
+        category: "Snacks",
+        items: [
+          { id: "as6", name: "Samosa", description: "Spicy potato filled", price: 30, isVeg: true },
+          { id: "as7", name: "Kachori", description: "Stuffed pastry", price: 40, isVeg: true },
+          { id: "as8", name: "Dhokla", description: "Steamed savory cake", price: 50, isVeg: true },
+          { id: "as9", name: "Pakora", description: "Fritters", price: 35, isVeg: true },
+        ],
+      },
+      {
+        category: "Halwas",
+        items: [
+          { id: "as10", name: "Gajar Halwa", description: "Carrot pudding", price: 200, isVeg: true },
+          {
+            id: "as11", name: "Badam Halwa", description: "Almond pudding", price: 250, isVeg: true
+          },
+        ],
+      },
+    ],
+  },
+  "355747": {
+    restaurantName: "Kwality Walls",
+    menu: [
+      {
+        category: "Ice Creams",
+        items: [
+          { id: "kw1", name: "Vanilla Ice Cream", description: "Classic creamy vanilla", price: 100, isVeg: true },
+          { id: "kw2", name: "Chocolate Ice Cream", description: "Rich chocolate flavor", price: 120, isVeg: true },
+          { id: "kw3", name: "Strawberry Ice Cream", description: "Fresh strawberry delight", price: 110, isVeg: true },
+          { id: "kw4", name: "Butterscotch Ice Cream", description: "Caramel nuts crunch", price: 130, isVeg: true },
+          { id: "kw5", name: "Mango Ice Cream", description: "Tropical mango", price: 115, isVeg: true },
+        ],
+      },
+      {
+        category: "Sundaes",
+        items: [
+          { id: "kw6", name: "Hot Fudge Sundae", description: "Vanilla with chocolate sauce", price: 150, isVeg: true },
+          { id: "kw7", name: "Caramel Sundae", description: "Caramel drizzle sundae", price: 160, isVeg: true },
+          { id: "kw8", name: "Fruit Sundae", description: "Mixed fruits topping", price: 140, isVeg: true },
+          { id: "kw9", name: "Brownie Sundae", description: "Brownie pieces sundae", price: 170, isVeg: true },
+        ],
+      },
+      {
+        category: "Shakes",
+        items: [
+          { id: "kw10", name: "Chocolate Shake", description: "Thick chocolate shake", price: 120, isVeg: true },
+          { id: "kw11", name: "Vanilla Shake", description: "Creamy vanilla shake", price: 110, isVeg: true },
+          { id: "kw12", name: "Strawberry Shake", description: "Berry shake", price: 130, isVeg: true },
+          { id: "kw13", name: "Oreo Shake", description: "Cookie crumble shake", price: 140, isVeg: true },
+          { id: "kw14", name: "Mango Shake", description: "Mango flavored shake", price: 125, isVeg: true },
+        ],
+      },
+      {
+        category: "Frozen Desserts",
+        items: [
+          { id: "kw15", name: "Kulfi", description: "Traditional Indian kulfi", price: 80, isVeg: true },
+          { id: "kw16", name: "Ice Cream Sandwich", description: "Ice cream between cookies", price: 90, isVeg: true },
+          { id: "kw17", name: "Choco Bar", description: "Chocolate coated bar", price: 50, isVeg: true },
+          { id: "kw18", name: "Cone Ice Cream", description: "Vanilla cone", price: 60, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "69039": {
+    restaurantName: "Ovenfresh Cakes And Desserts",
+    menu: [
+      {
+        category: "Cakes",
+        items: [
+          { id: "of1", name: "Chocolate Cake", description: "Moist chocolate cake", price: 400, isVeg: true },
+          { id: "of2", name: "Vanilla Cake", description: "Soft vanilla sponge", price: 350, isVeg: true },
+          { id: "of3", name: "Red Velvet Cake", description: "Cream cheese topping", price: 450, isVeg: true },
+          { id: "of4", name: "Black Forest Cake", description: "Cherry filled", price: 420, isVeg: true },
+          { id: "of5", name: "Pineapple Cake", description: "Fresh pineapple", price: 380, isVeg: true },
+        ],
+      },
+      {
+        category: "Pastries",
+        items: [
+          { id: "of6", name: "Chocolate Pastry", description: "Rich chocolate", price: 100, isVeg: true },
+          { id: "of7", name: "Butterscotch Pastry", description: "Caramel flavor", price: 110, isVeg: true },
+          { id: "of8", name: "Strawberry Pastry", description: "Berry delight", price: 120, isVeg: true },
+          { id: "of9", name: "Mango Pastry", description: "Tropical mango", price: 115, isVeg: true },
+        ],
+      },
+      {
+        category: "Desserts",
+        items: [
+          { id: "of10", name: "Tiramisu", description: "Italian coffee dessert", price: 200, isVeg: true },
+          { id: "of11", name: "Cheesecake", description: "Creamy cheesecake", price: 180, isVeg: true },
+          { id: "of12", name: "Brownie", description: "Fudgy chocolate brownie", price: 150, isVeg: true },
+          { id: "of13", name: "Cupcake Assortment", description: "Mixed cupcakes", price: 250, isVeg: true },
+          { id: "of14", name: "Fruit Tart", description: "Fresh fruit tart", price: 220, isVeg: true },
+        ],
+      },
+      {
+        category: "Beverages",
+        items: [
+          { id: "of15", name: "Coffee", description: "Hot brewed coffee", price: 80, isVeg: true },
+          { id: "of16", name: "Tea", description: "Masala tea", price: 60, isVeg: true },
+          { id: "of17", name: "Hot Chocolate", description: "Rich cocoa", price: 100, isVeg: true },
+          { id: "of18", name: "Lemonade", description: "Refreshing lemon", price: 70, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "57514": {
+    restaurantName: "Veg Darbar by Behrouz Biryani",
+    menu: [
+      {
+        category: "Biryani",
+        items: [
+          { id: "vd1", name: "Veg Biryani", description: "Aromatic veg rice", price: 300, isVeg: true },
+          { id: "vd2", name: "Paneer Biryani", description: "Paneer layered biryani", price: 350, isVeg: true },
+          { id: "vd3", name: "Mushroom Biryani", description: "Mushroom flavored", price: 320, isVeg: true },
+          { id: "vd4", name: "Veg Dum Biryani", description: "Slow cooked veg", price: 330, isVeg: true },
+          { id: "vd5", name: "Jackfruit Biryani", description: "Unique jackfruit", price: 340, isVeg: true },
+        ],
+      },
+      {
+        category: "Starters",
+        items: [
+          { id: "vd6", name: "Paneer Tikka", description: "Grilled paneer", price: 250, isVeg: true },
+          { id: "vd7", name: "Hara Bhara Kebab", description: "Green veg kebab", price: 220, isVeg: true },
+          { id: "vd8", name: "Veg Seekh Kebab", description: "Minced veg skewers", price: 230, isVeg: true },
+          { id: "vd9", name: "Crispy Corn", description: "Fried corn kernels", price: 200, isVeg: true },
+        ],
+      },
+      {
+        category: "Main Course",
+        items: [
+          { id: "vd10", name: "Paneer Butter Masala", description: "Creamy paneer curry", price: 280, isVeg: true },
+          { id: "vd11", name: "Veg Kofta Curry", description: "Veg balls in gravy", price: 260, isVeg: true },
+          { id: "vd12", name: "Dal Makhani", description: "Buttery lentils", price: 240, isVeg: true },
+          { id: "vd13", name: "Mix Veg Curry", description: "Mixed vegetables", price: 220, isVeg: true },
+          { id: "vd14", name: "Palak Paneer", description: "Spinach paneer", price: 270, isVeg: true },
+        ],
+      },
+      {
+        category: "Desserts",
+        items: [
+          { id: "vd15", name: "Gulab Jamun", description: "Sweet dumplings", price: 100, isVeg: true },
+          { id: "vd16", name: "Ras Malai", description: "Creamy dessert", price: 120, isVeg: true },
+          { id: "vd17", name: "Phirni", description: "Rice pudding", price: 110, isVeg: true },
+          { id: "vd18", name: "Shahi Tukda", description: "Bread dessert", price: 130, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "23707": {
+    restaurantName: "McDonald’s",
+    menu: [
+      {
+        category: "Burgers",
+        items: [
+          { id: "md1", name: "Big Mac", description: "Classic beef burger", price: 250, isVeg: false },
+          { id: "md2", name: "McAloo Tikki", description: "Veg potato patty", price: 50, isVeg: true },
+          { id: "md3", name: "Chicken McGrill", description: "Grilled chicken", price: 150, isVeg: false },
+          { id: "md4", name: "Cheeseburger", description: "Beef with cheese", price: 200, isVeg: false },
+          { id: "md5", name: "Veg Burger", description: "Veg patty burger", price: 100, isVeg: true },
+        ],
+      },
+      {
+        category: "Sides",
+        items: [
+          { id: "md6", name: "French Fries", description: "Crispy fries", price: 90, isVeg: true },
+          { id: "md7", name: "Chicken Nuggets", description: "Bite-sized chicken", price: 180, isVeg: false },
+          { id: "md8", name: "Hash Browns", description: "Potato patties", price: 70, isVeg: true },
+          { id: "md9", name: "Onion Rings", description: "Fried onions", price: 110, isVeg: true },
+        ],
+      },
+      {
+        category: "Desserts",
+        items: [
+          { id: "md10", name: "McFlurry", description: "Ice cream mix", price: 120, isVeg: true },
+          { id: "md11", name: "Soft Serve", description: "Vanilla cone", price: 50, isVeg: true },
+          { id: "md12", name: "Brownie Sundae", description: "Brownie with ice cream", price: 150, isVeg: true },
+          { id: "md13", name: "Apple Pie", description: "Hot apple pie", price: 80, isVeg: true },
+          { id: "md14", name: "Chocolate Shake", description: "Thick shake", price: 130, isVeg: true },
+        ],
+      },
+      {
+        category: "Beverages",
+        items: [
+          { id: "md15", name: "Coke", description: "Chilled cola", price: 60, isVeg: true },
+          { id: "md16", name: "Coffee", description: "Hot coffee", price: 80, isVeg: true },
+          { id: "md17", name: "Iced Tea", description: "Lemon iced tea", price: 70, isVeg: true },
+          { id: "md18", name: "Sprite", description: "Lemon lime soda", price: 60, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "442889": {
+    restaurantName: "The Dessert Heaven – Pastry, Brownie & Cakes",
+    menu: [
+      {
+        category: "Pastries",
+        items: [
+          { id: "dh1", name: "Chocolate Pastry", description: "Decadent chocolate", price: 120, isVeg: true },
+          { id: "dh2", name: "Vanilla Pastry", description: "Creamy vanilla", price: 110, isVeg: true },
+          { id: "dh3", name: "Red Velvet Pastry", description: "Velvety red", price: 130, isVeg: true },
+          { id: "dh4", name: "Black Forest Pastry", description: "Cherry chocolate", price: 125, isVeg: true },
+          { id: "dh5", name: "Pineapple Pastry", description: "Tropical flavor", price: 115, isVeg: true },
+        ],
+      },
+      {
+        category: "Brownies",
+        items: [
+          { id: "dh6", name: "Fudgy Brownie", description: "Rich fudgy", price: 100, isVeg: true },
+          { id: "dh7", name: "Walnut Brownie", description: "With walnuts", price: 110, isVeg: true },
+          { id: "dh8", name: "Blondie Brownie", description: "Vanilla brownie", price: 105, isVeg: true },
+          { id: "dh9", name: "Nutella Brownie", description: "Hazelnut spread", price: 120, isVeg: true },
+        ],
+      },
+      {
+        category: "Cakes",
+        items: [
+          { id: "dh10", name: "Chocolate Cake", description: "Layered chocolate", price: 400, isVeg: true },
+          { id: "dh11", name: "Vanilla Cake", description: "Soft vanilla", price: 350, isVeg: true },
+          { id: "dh12", name: "Red Velvet Cake", description: "Cream cheese", price: 450, isVeg: true },
+          { id: "dh13", name: "Fruit Cake", description: "Mixed fruits", price: 380, isVeg: true },
+          { id: "dh14", name: "Cheesecake", description: "Baked cheesecake", price: 420, isVeg: true },
+        ],
+      },
+      {
+        category: "Beverages",
+        items: [
+          { id: "dh15", name: "Hot Chocolate", description: "Warm cocoa", price: 150, isVeg: true },
+          { id: "dh16", name: "Coffee", description: "Fresh brewed", price: 100, isVeg: true },
+          { id: "dh17", name: "Tea", description: "Herbal tea", price: 80, isVeg: true },
+          { id: "dh18", name: "Milkshake", description: "Chocolate shake", price: 180, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "360967": {
+    restaurantName: "Wow! Momo",
+    menu: [
+      {
+        category: "Momos",
+        items: [
+          { id: "wm1", name: "Veg Momos", description: "Steamed veg dumplings", price: 150, isVeg: true },
+          { id: "wm2", name: "Chicken Momos", description: "Steamed chicken", price: 180, isVeg: false },
+          { id: "wm3", name: "Fried Momos", description: "Crispy fried veg", price: 160, isVeg: true },
+          { id: "wm4", name: "Paneer Momos", description: "Paneer filled", price: 170, isVeg: true },
+          { id: "wm5", name: "Mutton Momos", description: "Minced mutton", price: 200, isVeg: false },
+        ],
+      },
+      {
+        category: "Starters",
+        items: [
+          { id: "wm6", name: "Chilli Momos", description: "Spicy sauce momos", price: 180, isVeg: true },
+          { id: "wm7", name: "Schezwan Momos", description: "Fiery schezwan", price: 190, isVeg: true },
+          { id: "wm8", name: "Chicken Thukpa", description: "Noodle soup", price: 200, isVeg: false },
+          { id: "wm9", name: "Veg Thukpa", description: "Veg noodle soup", price: 170, isVeg: true },
+        ],
+      },
+      {
+        category: "Sides",
+        items: [
+          { id: "wm10", name: "French Fries", description: "Crispy fries", price: 100, isVeg: true },
+          { id: "wm11", name: "Chicken Wings", description: "Spicy wings", price: 220, isVeg: false },
+          { id: "wm12", name: "Spring Rolls", description: "Veg rolls", price: 150, isVeg: true },
+          { id: "wm13", name: "Chilli Potato", description: "Spicy potatoes", price: 140, isVeg: true },
+          { id: "wm14", name: "Onion Rings", description: "Fried rings", price: 120, isVeg: true },
+        ],
+      },
+      {
+        category: "Beverages",
+        items: [
+          { id: "wm15", name: "Coke", description: "Chilled cola", price: 50, isVeg: true },
+          { id: "wm16", name: "Lemonade", description: "Fresh lemon", price: 60, isVeg: true },
+          { id: "wm17", name: "Iced Tea", description: "Peach tea", price: 70, isVeg: true },
+          { id: "wm18", name: "Coffee", description: "Hot coffee", price: 80, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "83861": {
+    restaurantName: "Euphoria",
+    menu: [
+      {
+        category: "Desserts",
+        items: [
+          { id: "eu1", name: "Chocolate Fondant", description: "Molten lava cake", price: 250, isVeg: true },
+          { id: "eu2", name: "Tiramisu", description: "Italian delight", price: 220, isVeg: true },
+          { id: "eu3", name: "Panna Cotta", description: "Creamy pudding", price: 200, isVeg: true },
+          { id: "eu4", name: "Crème Brûlée", description: "Caramelized custard", price: 230, isVeg: true },
+          { id: "eu5", name: "Macarons", description: "Assorted flavors", price: 180, isVeg: true },
+        ],
+      },
+      {
+        category: "Pastries",
+        items: [
+          { id: "eu6", name: "Eclair", description: "Cream filled pastry", price: 120, isVeg: true },
+          { id: "eu7", name: "Croissant", description: "Buttery flaky", price: 100, isVeg: true },
+          { id: "eu8", name: "Danish Pastry", description: "Fruit topped", price: 110, isVeg: true },
+          { id: "eu9", name: "Mille-Feuille", description: "Layered puff", price: 130, isVeg: true },
+        ],
+      },
+      {
+        category: "Cakes",
+        items: [
+          { id: "eu10", name: "Opera Cake", description: "Almond sponge", price: 450, isVeg: true },
+          { id: "eu11", name: "Sacher Torte", description: "Chocolate apricot", price: 400, isVeg: true },
+          { id: "eu12", name: "Black Forest", description: "Cherry chocolate", price: 420, isVeg: true },
+          { id: "eu13", name: "Lemon Tart", description: "Tangy lemon", price: 350, isVeg: true },
+          { id: "eu14", name: "Carrot Cake", description: "Spiced carrot", price: 380, isVeg: true },
+        ],
+      },
+      {
+        category: "Beverages",
+        items: [
+          { id: "eu15", name: "Espresso", description: "Strong coffee", price: 100, isVeg: true },
+          { id: "eu16", name: "Cappuccino", description: "Frothy milk", price: 120, isVeg: true },
+          { id: "eu17", name: "Herbal Tea", description: "Soothing herbs", price: 90, isVeg: true },
+          { id: "eu18", name: "Hot Chocolate", description: "Rich cocoa", price: 130, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "395225": {
+    restaurantName: "McDonald’s Gourmet Burger Collection",
+    menu: [
+      {
+        category: "Gourmet Burgers",
+        items: [
+          { id: "mgb1", name: "Gourmet Beef Burger", description: "Premium beef patty", price: 300, isVeg: false },
+          { id: "mgb2", name: "Gourmet Chicken Burger", description: "Grilled chicken gourmet", price: 280, isVeg: false },
+          { id: "mgb3", name: "Veg Gourmet Burger", description: "Premium veg patty", price: 250, isVeg: true },
+          { id: "mgb4", name: "Cheese Gourmet Burger", description: "Loaded with cheese", price: 320, isVeg: false },
+          { id: "mgb5", name: "Spicy Gourmet Burger", description: "Spicy sauce burger", price: 290, isVeg: false },
+        ],
+      },
+      {
+        category: "Sides",
+        items: [
+          { id: "mgb6", name: "Truffle Fries", description: "Truffle flavored fries", price: 150, isVeg: true },
+          { id: "mgb7", name: "Onion Petals", description: "Crispy onion", price: 130, isVeg: true },
+          { id: "mgb8", name: "Chicken Strips", description: "Tender strips", price: 200, isVeg: false },
+          { id: "mgb9", name: "Salad", description: "Fresh green salad", price: 120, isVeg: true },
+        ],
+      },
+      {
+        category: "Desserts",
+        items: [
+          { id: "mgb10", name: "Premium Sundae", description: "Gourmet ice cream", price: 180, isVeg: true },
+          { id: "mgb11", name: "Chocolate Pie", description: "Gourmet pie", price: 150, isVeg: true },
+          { id: "mgb12", name: "Brownie", description: "Rich brownie", price: 160, isVeg: true },
+          { id: "mgb13", name: "Cheesecake", description: "Creamy cheesecake", price: 200, isVeg: true },
+          { id: "mgb14", name: "Shake", description: "Thick gourmet shake", price: 170, isVeg: true },
+        ],
+      },
+      {
+        category: "Beverages",
+        items: [
+          { id: "mgb15", name: "Craft Soda", description: "Artisanal soda", price: 100, isVeg: true },
+          { id: "mgb16", name: "Iced Coffee", description: "Chilled coffee", price: 120, isVeg: true },
+          { id: "mgb17", name: "Lemonade", description: "Fresh squeezed", price: 90, isVeg: true },
+          { id: "mgb18", name: "Mineral Water", description: "Sparkling water", price: 80, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "581195": {
+    restaurantName: "Cheesecakes By CakeZone",
+    menu: [
+      {
+        category: "Cheesecakes",
+        items: [
+          { id: "cc1", name: "New York Cheesecake", description: "Classic baked", price: 300, isVeg: true },
+          { id: "cc2", name: "Strawberry Cheesecake", description: "Berry topped", price: 320, isVeg: true },
+          { id: "cc3", name: "Chocolate Cheesecake", description: "Chocolate swirl", price: 350, isVeg: true },
+          { id: "cc4", name: "Oreo Cheesecake", description: "Cookie crust", price: 340, isVeg: true },
+          { id: "cc5", name: "Blueberry Cheesecake", description: "Blueberry compote", price: 330, isVeg: true },
+        ],
+      },
+      {
+        category: "Cakes",
+        items: [
+          { id: "cc6", name: "Chocolate Cake", description: "Rich sponge", price: 400, isVeg: true },
+          { id: "cc7", name: "Vanilla Cake", description: "Soft vanilla", price: 350, isVeg: true },
+          { id: "cc8", name: "Red Velvet Cake", description: "Velvety red", price: 450, isVeg: true },
+          { id: "cc9", name: "Lemon Cake", description: "Tangy lemon", price: 380, isVeg: true },
+        ],
+      },
+      {
+        category: "Pastries",
+        items: [
+          { id: "cc10", name: "Chocolate Pastry", description: "Decadent pastry", price: 120, isVeg: true },
+          { id: "cc11", name: "Butterscotch Pastry", description: "Caramel pastry", price: 110, isVeg: true },
+          { id: "cc12", name: "Mango Pastry", description: "Tropical mango", price: 130, isVeg: true },
+          { id: "cc13", name: "Truffle Pastry", description: "Chocolate truffle", price: 140, isVeg: true },
+          { id: "cc14", name: "Pineapple Pastry", description: "Sweet pineapple", price: 115, isVeg: true },
+        ],
+      },
+      {
+        category: "Desserts",
+        items: [
+          { id: "cc15", name: "Brownie", description: "Fudgy brownie", price: 150, isVeg: true },
+          { id: "cc16", name: "Cupcake", description: "Assorted cupcakes", price: 100, isVeg: true },
+          { id: "cc17", name: "Macaron", description: "French macarons", price: 200, isVeg: true },
+          { id: "cc18", name: "Tart", description: "Fruit tart", price: 180, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "2087": {
+    restaurantName: "Agrawala Sweets",
+    menu: [
+      {
+        category: "Sweets",
+        items: [
+          { id: "as1", name: "Rasgulla", description: "Spongy cheese balls", price: 150, isVeg: true },
+          { id: "as2", name: "Gulab Jamun", description: "Fried milk balls", price: 140, isVeg: true },
+          { id: "as3", name: "Barfi", description: "Milk fudge", price: 300, isVeg: true },
+          { id: "as4", name: "Laddu", description: "Sweet balls", price: 250, isVeg: true },
+          { id: "as5", name: "Peda", description: "Milk sweet", price: 280, isVeg: true },
+        ],
+      },
+      {
+        category: "Snacks",
+        items: [
+          { id: "as6", name: "Samosa", description: "Spicy potato filled", price: 30, isVeg: true },
+          { id: "as7", name: "Kachori", description: "Stuffed pastry", price: 40, isVeg: true },
+          { id: "as8", name: "Dhokla", description: "Steamed savory cake", price: 50, isVeg: true },
+          { id: "as9", name: "Pakora", description: "Fritters", price: 35, isVeg: true },
+        ],
+      },
+      {
+        category: "Halwas",
+        items: [
+          { id: "as10", name: "Gajar Halwa", description: "Carrot pudding", price: 200, isVeg: true },
+          { id: "as11", name: "Badam Halwa", description: "Almond pudding", price: 250, isVeg: true },
+          { id: "as12", name: "Moong Dal Halwa", description: "Lentil pudding", price: 220, isVeg: true },
+          { id: "as13", name: "Suji Halwa", description: "Semolina pudding", price: 180, isVeg: true },
+          { id: "as14", name: "Atta Halwa", description: "Wheat flour pudding", price: 190, isVeg: true },
+        ],
+      },
+      {
+        category: "Beverages",
+        items: [
+          { id: "as15", name: "Lassi", description: "Yogurt drink", price: 80, isVeg: true },
+          { id: "as16", name: "Thandai", description: "Spiced milk", price: 100, isVeg: true },
+          { id: "as17", name: "Rose Milk", description: "Rose flavored milk", price: 90, isVeg: true },
+          { id: "as18", name: "Badam Milk", description: "Almond milk", price: 110, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "262087": {
+    restaurantName: "Imperial Multicuisines Restaurant",
+    menu: [
+      {
+        category: "North Indian",
+        items: [
+          { id: "im1", name: "Butter Chicken", description: "Creamy chicken curry", price: 350, isVeg: false },
+          { id: "im2", name: "Paneer Tikka Masala", description: "Grilled paneer in gravy", price: 300, isVeg: true },
+          { id: "im3", name: "Dal Makhani", description: "Black lentils creamy", price: 250, isVeg: true },
+          { id: "im4", name: "Mutton Rogan Josh", description: "Spicy mutton curry", price: 400, isVeg: false },
+          { id: "im5", name: "Naan", description: "Soft bread", price: 50, isVeg: true },
+        ],
+      },
+      {
+        category: "Chinese",
+        items: [
+          { id: "im6", name: "Chicken Fried Rice", description: "Stir fried rice", price: 250, isVeg: false },
+          { id: "im7", name: "Veg Hakka Noodles", description: "Veg noodles", price: 200, isVeg: true },
+          { id: "im8", name: "Chilli Paneer", description: "Spicy paneer", price: 220, isVeg: true },
+          { id: "im9", name: "Manchurian", description: "Veg balls in sauce", price: 210, isVeg: true },
+        ],
+      },
+      {
+        category: "South Indian",
+        items: [
+          { id: "im10", name: "Masala Dosa", description: "Crispy dosa", price: 150, isVeg: true },
+          { id: "im11", name: "Idli Sambar", description: "Steamed idli", price: 120, isVeg: true },
+          { id: "im12", name: "Vada", description: "Fried lentil donut", price: 100, isVeg: true },
+          { id: "im13", name: "Uttapam", description: "Thick pancake", price: 140, isVeg: true },
+          { id: "im14", name: "Pongal", description: "Rice lentil porridge", price: 130, isVeg: true },
+        ],
+      },
+      {
+        category: "Desserts",
+        items: [
+          { id: "im15", name: "Gulab Jamun", description: "Sweet dumplings", price: 100, isVeg: true },
+          { id: "im16", name: "Ice Cream", description: "Assorted flavors", price: 120, isVeg: true },
+          { id: "im17", name: "Ras Malai", description: "Creamy cheese balls", price: 150, isVeg: true },
+          { id: "im18", name: "Brownie", description: "Chocolate brownie", price: 140, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "16158": {
+    restaurantName: "Royal Tiffin Centre",
+    menu: [
+      {
+        category: "Tiffins",
+        items: [
+          { id: "rt1", name: "Idli", description: "Soft steamed cakes", price: 60, isVeg: true },
+          { id: "rt2", name: "Vada", description: "Crispy fried", price: 70, isVeg: true },
+          { id: "rt3", name: "Masala Dosa", description: "Potato filled dosa", price: 90, isVeg: true },
+          { id: "rt4", name: "Pongal", description: "Savory porridge", price: 80, isVeg: true },
+          { id: "rt5", name: "Upma", description: "Semolina dish", price: 65, isVeg: true },
+        ],
+      },
+      {
+        category: "Meals",
+        items: [
+          { id: "rt6", name: "Veg Meal", description: "Rice with curries", price: 150, isVeg: true },
+          { id: "rt7", name: "Chicken Meal", description: "Chicken curry meal", price: 200, isVeg: false },
+          { id: "rt8", name: "Fish Meal", description: "Fish curry meal", price: 220, isVeg: false },
+          { id: "rt9", name: "Egg Meal", description: "Egg masala meal", price: 180, isVeg: false },
+        ],
+      },
+      {
+        category: "Snacks",
+        items: [
+          { id: "rt10", name: "Samosa", description: "Spicy potato snack", price: 30, isVeg: true },
+          { id: "rt11", name: "Pakoda", description: "Onion fritters", price: 40, isVeg: true },
+          { id: "rt12", name: "Bonda", description: "Potato balls", price: 35, isVeg: true },
+          { id: "rt13", name: "Mirchi Bajji", description: "Chilli fritters", price: 45, isVeg: true },
+          { id: "rt14", name: "Cutlet", description: "Veg cutlet", price: 50, isVeg: true },
+        ],
+      },
+      {
+        category: "Beverages",
+        items: [
+          { id: "rt15", name: "Tea", description: "Hot masala tea", price: 20, isVeg: true },
+          { id: "rt16", name: "Coffee", description: "South Indian coffee", price: 25, isVeg: true },
+          { id: "rt17", name: "Buttermilk", description: "Spiced buttermilk", price: 30, isVeg: true },
+          { id: "rt18", name: "Lassi", description: "Sweet lassi", price: 40, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "798552": {
+    restaurantName: "Harely’s Fine Baking",
+    menu: [
+      {
+        category: "Breads",
+        items: [
+          { id: "hf1", name: "Croissant", description: "Buttery flaky croissant", price: 80, isVeg: true },
+          { id: "hf2", name: "Baguette", description: "French bread", price: 100, isVeg: true },
+          { id: "hf3", name: "Sourdough", description: "Artisanal sourdough", price: 120, isVeg: true },
+          { id: "hf4", name: "Ciabatta", description: "Italian bread", price: 90, isVeg: true },
+          { id: "hf5", name: "Focaccia", description: "Herb topped", price: 110, isVeg: true },
+        ],
+      },
+      {
+        category: "Pastries",
+        items: [
+          { id: "hf6", name: "Danish Pastry", description: "Fruit filled", price: 100, isVeg: true },
+          { id: "hf7", name: "Eclair", description: "Cream filled", price: 90, isVeg: true },
+          { id: "hf8", name: "Pain au Chocolat", description: "Chocolate croissant", price: 110, isVeg: true },
+          { id: "hf9", name: "Almond Croissant", description: "Almond paste", price: 120, isVeg: true },
+        ],
+      },
+      {
+        category: "Cakes",
+        items: [
+          { id: "hf10", name: "Chocolate Cake", description: "Rich chocolate", price: 400, isVeg: true },
+          { id: "hf11", name: "Vanilla Cake", description: "Classic vanilla", price: 350, isVeg: true },
+          { id: "hf12", name: "Carrot Cake", description: "Spiced carrot", price: 380, isVeg: true },
+          { id: "hf13", name: "Lemon Cake", description: "Tangy lemon", price: 360, isVeg: true },
+          { id: "hf14", name: "Cheesecake", description: "Creamy cheese", price: 420, isVeg: true },
+        ],
+      },
+      {
+        category: "Cookies",
+        items: [
+          { id: "hf15", name: "Chocolate Chip Cookie", description: "Chewy cookie", price: 50, isVeg: true },
+          { id: "hf16", name: "Oatmeal Cookie", description: "Healthy oats", price: 60, isVeg: true },
+          { id: "hf17", name: "Sugar Cookie", description: "Sweet sugar", price: 40, isVeg: true },
+          { id: "hf18", name: "Peanut Butter Cookie", description: "Nutty flavor", price: 55, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "263841": {
+    restaurantName: "Veg Meals Lunch Box",
+    menu: [
+      {
+        category: "Lunch Boxes",
+        items: [
+          { id: "vl1", name: "Veg Thali", description: "Complete veg meal", price: 200, isVeg: true },
+          { id: "vl2", name: "Paneer Meal", description: "Paneer curry box", price: 220, isVeg: true },
+          { id: "vl3", name: "Dal Rice", description: "Simple dal rice", price: 150, isVeg: true },
+          { id: "vl4", name: "Veg Biryani Box", description: "Biryani with raita", price: 180, isVeg: true },
+          { id: "vl5", name: "Mix Veg Meal", description: "Mixed veg curry", price: 190, isVeg: true },
+        ],
+      },
+      {
+        category: "Starters",
+        items: [
+          { id: "vl6", name: "Papad", description: "Crispy papad", price: 20, isVeg: true },
+          { id: "vl7", name: "Salad", description: "Fresh salad", price: 50, isVeg: true },
+          { id: "vl8", name: "Raita", description: "Yogurt side", price: 40, isVeg: true },
+          { id: "vl9", name: "Pickle", description: "Mixed pickle", price: 30, isVeg: true },
+        ],
+      },
+      {
+        category: "Breads",
+        items: [
+          { id: "vl10", name: "Chapati", description: "Wheat flatbread", price: 20, isVeg: true },
+          { id: "vl11", name: "Paratha", description: "Layered bread", price: 30, isVeg: true },
+          { id: "vl12", name: "Puri", description: "Fried bread", price: 25, isVeg: true },
+          { id: "vl13", name: "Naan", description: "Soft naan", price: 40, isVeg: true },
+          { id: "vl14", name: "Roti", description: "Thin roti", price: 15, isVeg: true },
+        ],
+      },
+      {
+        category: "Desserts",
+        items: [
+          { id: "vl15", name: "Gulab Jamun", description: "Sweet balls", price: 50, isVeg: true },
+          { id: "vl16", name: "Kheer", description: "Rice pudding", price: 60, isVeg: true },
+          { id: "vl17", name: "Fruit Custard", description: "Mixed fruit custard", price: 70, isVeg: true },
+          { id: "vl18", name: "Halwa", description: "Semolina halwa", price: 50, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "575804": {
+    restaurantName: "Varalakshmi Tiffins",
+    menu: [
+      {
+        category: "Tiffins",
+        items: [
+          { id: "vt1", name: "Idli Sambar", description: "Steamed idli with sambar", price: 60, isVeg: true },
+          { id: "vt2", name: "Vada", description: "Crispy vada", price: 70, isVeg: true },
+          { id: "vt3", name: "Masala Dosa", description: "Spicy potato dosa", price: 90, isVeg: true },
+          { id: "vt4", name: "Pesarattu", description: "Green gram dosa", price: 80, isVeg: true },
+          { id: "vt5", name: "Upma", description: "Savory semolina", price: 65, isVeg: true },
+        ],
+      },
+      {
+        category: "South Indian Specials",
+        items: [
+          { id: "vt6", name: "Onion Dosa", description: "Dosa with onions", price: 85, isVeg: true },
+          { id: "vt7", name: "Rava Dosa", description: "Crispy rava", price: 90, isVeg: true },
+          { id: "vt8", name: "Uttapam", description: "Thick veg pancake", price: 80, isVeg: true },
+          { id: "vt9", name: "Pongal", description: "Rice lentil dish", price: 70, isVeg: true },
+        ],
+      },
+      {
+        category: "Snacks",
+        items: [
+          { id: "vt10", name: "Mirchi Bajji", description: "Stuffed chilli fritter", price: 50, isVeg: true },
+          { id: "vt11", name: "Punugulu", description: "Fried batter balls", price: 60, isVeg: true },
+          { id: "vt12", name: "Bonda", description: "Potato bonda", price: 55, isVeg: true },
+          { id: "vt13", name: "Pakoda", description: "Onion pakoda", price: 45, isVeg: true },
+          { id: "vt14", name: "Samosa", description: "Potato samosa", price: 40, isVeg: true },
+        ],
+      },
+      {
+        category: "Beverages",
+        items: [
+          { id: "vt15", name: "Filter Coffee", description: "Strong coffee", price: 30, isVeg: true },
+          { id: "vt16", name: "Tea", description: "Masala tea", price: 25, isVeg: true },
+          { id: "vt17", name: "Buttermilk", description: "Spiced buttermilk", price: 20, isVeg: true },
+          { id: "vt18", name: "Lassi", description: "Sweet lassi", price: 40, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "92839": {
+    restaurantName: "Kamat Hotel",
+    menu: [
+      {
+        category: "South Indian",
+        items: [
+          { id: "kh1", name: "Masala Dosa", description: "Crispy dosa with filling", price: 100, isVeg: true },
+          { id: "kh2", name: "Idli Vada", description: "Combo of idli and vada", price: 80, isVeg: true },
+          { id: "kh3", name: "Bisibele Bath", description: "Rice lentil hot bath", price: 120, isVeg: true },
+          { id: "kh4", name: "Akki Rotti", description: "Rice flatbread", price: 90, isVeg: true },
+          { id: "kh5", name: "Ragi Mudde", description: "Millet balls", price: 110, isVeg: true },
+        ],
+      },
+      {
+        category: "North Indian",
+        items: [
+          { id: "kh6", name: "Paneer Butter Masala", description: "Creamy paneer", price: 250, isVeg: true },
+          { id: "kh7", name: "Chole Bhature", description: "Chickpea curry with bread", price: 200, isVeg: true },
+          { id: "kh8", name: "Aloo Paratha", description: "Potato stuffed paratha", price: 150, isVeg: true },
+          { id: "kh9", name: "Dal Tadka", description: "Tempered lentils", price: 180, isVeg: true },
+        ],
+      },
+      {
+        category: "Snacks",
+        items: [
+          { id: "kh10", name: "Samosa", description: "Spicy samosa", price: 40, isVeg: true },
+          { id: "kh11", name: "Pakora", description: "Veg fritters", price: 50, isVeg: true },
+          { id: "kh12", name: "Dhokla", description: "Steamed cake", price: 60, isVeg: true },
+          { id: "kh13", name: "Khandvi", description: "Gram flour rolls", price: 70, isVeg: true },
+          { id: "kh14", name: "Bhel Puri", description: "Puffed rice snack", price: 50, isVeg: true },
+        ],
+      },
+      {
+        category: "Desserts",
+        items: [
+          { id: "kh15", name: "Mysore Pak", description: "Ghee sweet", price: 100, isVeg: true },
+          { id: "kh16", name: "Payasa", description: "Kheer dessert", price: 80, isVeg: true },
+          { id: "kh17", name: "Holige", description: "Sweet flatbread", price: 90, isVeg: true },
+          { id: "kh18", name: "Jalebi", description: "Syrupy swirls", price: 70, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "214964": {
+    restaurantName: "Lingaiah Hotel",
+    menu: [
+      {
+        category: "Andhra Meals",
+        items: [
+          { id: "lh1", name: "Veg Meal", description: "Andhra style veg thali", price: 150, isVeg: true },
+          { id: "lh2", name: "Chicken Meal", description: "Spicy chicken meal", price: 200, isVeg: false },
+          { id: "lh3", name: "Mutton Meal", description: "Tender mutton meal", price: 250, isVeg: false },
+          { id: "lh4", name: "Fish Meal", description: "Fish curry meal", price: 220, isVeg: false },
+          { id: "lh5", name: "Prawn Meal", description: "Seafood meal", price: 280, isVeg: false },
+        ],
+      },
+      {
+        category: "Biryani",
+        items: [
+          { id: "lh6", name: "Chicken Biryani", description: "Aromatic chicken rice", price: 250, isVeg: false },
+          { id: "lh7", name: "Mutton Biryani", description: "Rich mutton biryani", price: 300, isVeg: false },
+          { id: "lh8", name: "Veg Biryani", description: "Vegetable biryani", price: 200, isVeg: true },
+          { id: "lh9", name: "Egg Biryani", description: "Egg layered biryani", price: 220, isVeg: false },
+        ],
+      },
+      {
+        category: "Starters",
+        items: [
+          { id: "lh10", name: "Chicken 65", description: "Spicy fried chicken", price: 180, isVeg: false },
+          { id: "lh11", name: "Fish Fry", description: "Crispy fish", price: 200, isVeg: false },
+          { id: "lh12", name: "Prawn Fry", description: "Spicy prawns", price: 250, isVeg: false },
+          { id: "lh13", name: "Paneer Tikka", description: "Grilled paneer", price: 180, isVeg: true },
+          { id: "lh14", name: "Gobi Manchurian", description: "Crispy cauliflower", price: 160, isVeg: true },
+        ],
+      },
+      {
+        category: "Desserts",
+        items: [
+          { id: "lh15", name: "Double Ka Meetha", description: "Bread pudding", price: 100, isVeg: true },
+          { id: "lh16", name: "Qubani Ka Meetha", description: "Apricot dessert", price: 120, isVeg: true },
+          { id: "lh17", name: "Gulab Jamun", description: "Sweet dumplings", price: 80, isVeg: true },
+          { id: "lh18", name: "Payasam", description: "Rice kheer", price: 90, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "662646": {
+    restaurantName: "Starbucks Coffee",
+    menu: [
+      {
+        category: "Coffee",
+        items: [
+          { id: "sc1", name: "Cappuccino", description: "Espresso with milk foam", price: 250, isVeg: true },
+          { id: "sc2", name: "Latte", description: "Espresso with steamed milk", price: 220, isVeg: true },
+          { id: "sc3", name: "Americano", description: "Espresso with hot water", price: 200, isVeg: true },
+          { id: "sc4", name: "Mocha", description: "Chocolate coffee", price: 280, isVeg: true },
+          { id: "sc5", name: "Espresso", description: "Strong black coffee", price: 150, isVeg: true },
+        ],
+      },
+      {
+        category: "Frappuccinos",
+        items: [
+          { id: "sc6", name: "Caramel Frappuccino", description: "Blended caramel", price: 300, isVeg: true },
+          { id: "sc7", name: "Mocha Frappuccino", description: "Chocolate blended", price: 320, isVeg: true },
+          { id: "sc8", name: "Vanilla Frappuccino", description: "Creamy vanilla", price: 280, isVeg: true },
+          { id: "sc9", name: "Java Chip Frappuccino", description: "Chocolate chips", price: 340, isVeg: true },
+        ],
+      },
+      {
+        category: "Pastries",
+        items: [
+          { id: "sc10", name: "Croissant", description: "Buttery croissant", price: 150, isVeg: true },
+          { id: "sc11", name: "Muffin", description: "Blueberry muffin", price: 180, isVeg: true },
+          { id: "sc12", name: "Danish", description: "Fruit danish", price: 160, isVeg: true },
+          { id: "sc13", name: "Brownie", description: "Chocolate brownie", price: 200, isVeg: true },
+          { id: "sc14", name: "Cookie", description: "Chocolate chip cookie", price: 120, isVeg: true },
+        ],
+      },
+      {
+        category: "Teas",
+        items: [
+          { id: "sc15", name: "Green Tea", description: "Healthy green tea", price: 200, isVeg: true },
+          { id: "sc16", name: "Chai Tea Latte", description: "Spiced chai", price: 220, isVeg: true },
+          { id: "sc17", name: "Iced Tea", description: "Chilled tea", price: 180, isVeg: true },
+          { id: "sc18", name: "Matcha Latte", description: "Green matcha", price: 250, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "798573": {
+    restaurantName: "Krispy Kreme – Doughnuts & Coffee",
+    menu: [
+      {
+        category: "Doughnuts",
+        items: [
+          { id: "kk1", name: "Original Glazed", description: "Classic glazed doughnut", price: 80, isVeg: true },
+          { id: "kk2", name: "Chocolate Iced", description: "Chocolate topped", price: 90, isVeg: true },
+          { id: "kk3", name: "Strawberry Filled", description: "Strawberry jam filled", price: 100, isVeg: true },
+          { id: "kk4", name: "Oreo Doughnut", description: "Oreo crumb topped", price: 110, isVeg: true },
+          { id: "kk5", name: "Cinnamon Sugar", description: "Cinnamon coated", price: 85, isVeg: true },
+        ],
+      },
+      {
+        category: "Coffee",
+        items: [
+          { id: "kk6", name: "Americano", description: "Black coffee", price: 150, isVeg: true },
+          { id: "kk7", name: "Cappuccino", description: "Foamy cappuccino", price: 180, isVeg: true },
+          { id: "kk8", name: "Latte", description: "Milky latte", price: 170, isVeg: true },
+          { id: "kk9", name: "Mocha", description: "Chocolate mocha", price: 200, isVeg: true },
+        ],
+      },
+      {
+        category: "Shakes",
+        items: [
+          { id: "kk10", name: "Chocolate Shake", description: "Thick chocolate", price: 200, isVeg: true },
+          { id: "kk11", name: "Vanilla Shake", description: "Creamy vanilla", price: 180, isVeg: true },
+          { id: "kk12", name: "Strawberry Shake", description: "Berry shake", price: 190, isVeg: true },
+          { id: "kk13", name: "Oreo Shake", description: "Cookie shake", price: 220, isVeg: true },
+          { id: "kk14", name: "Caramel Shake", description: "Caramel flavor", price: 210, isVeg: true },
+        ],
+      },
+      {
+        category: "Beverages",
+        items: [
+          { id: "kk15", name: "Hot Chocolate", description: "Warm cocoa", price: 150, isVeg: true },
+          { id: "kk16", name: "Iced Coffee", description: "Chilled coffee", price: 180, isVeg: true },
+          { id: "kk17", name: "Lemonade", description: "Fresh lemon", price: 120, isVeg: true },
+          { id: "kk18", name: "Tea", description: "Hot tea", price: 100, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "114723": {
+    restaurantName: "Suprabath Tiffins",
+    menu: [
+      {
+        category: "Tiffins",
+        items: [
+          { id: "st1", name: "Idli", description: "Soft idlis", price: 50, isVeg: true },
+          { id: "st2", name: "Vada", description: "Crispy vadas", price: 60, isVeg: true },
+          { id: "st3", name: "Dosa", description: "Plain dosa", price: 70, isVeg: true },
+          { id: "st4", name: "Masala Dosa", description: "Filled dosa", price: 80, isVeg: true },
+          { id: "st5", name: "Upma", description: "Savory upma", price: 55, isVeg: true },
+        ],
+      },
+      {
+        category: "South Indian",
+        items: [
+          { id: "st6", name: "Pongal", description: "Rice lentil", price: 70, isVeg: true },
+          { id: "st7", name: "Pesarattu", description: "Moong dal dosa", price: 80, isVeg: true },
+          { id: "st8", name: "Uttapam", description: "Veg uttapam", price: 90, isVeg: true },
+          { id: "st9", name: "Rava Dosa", description: "Crispy rava", price: 85, isVeg: true },
+        ],
+      },
+      {
+        category: "Snacks",
+        items: [
+          { id: "st10", name: "Bonda", description: "Potato bonda", price: 40, isVeg: true },
+          { id: "st11", name: "Pakoda", description: "Onion pakoda", price: 50, isVeg: true },
+          { id: "st12", name: "Mirchi Bajji", description: "Chilli bajji", price: 45, isVeg: true },
+          { id: "st13", name: "Punugulu", description: "Fried balls", price: 55, isVeg: true },
+          { id: "st14", name: "Samosa", description: "Spicy samosa", price: 30, isVeg: true },
+        ],
+      },
+      {
+        category: "Beverages",
+        items: [
+          { id: "st15", name: "Coffee", description: "Filter coffee", price: 20, isVeg: true },
+          { id: "st16", name: "Tea", description: "Masala tea", price: 15, isVeg: true },
+          { id: "st17", name: "Buttermilk", description: "Chilled buttermilk", price: 25, isVeg: true },
+          { id: "st18", name: "Lassi", description: "Sweet lassi", price: 30, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "1136764": {
+    restaurantName: "Third Wave Coffee",
+    menu: [
+      {
+        category: "Coffee",
+        items: [
+          { id: "tw1", name: "Espresso", description: "Strong shot", price: 150, isVeg: true },
+          { id: "tw2", name: "Cappuccino", description: "Foamy coffee", price: 200, isVeg: true },
+          { id: "tw3", name: "Latte", description: "Milky espresso", price: 180, isVeg: true },
+          { id: "tw4", name: "Americano", description: "Black coffee", price: 160, isVeg: true },
+          { id: "tw5", name: "Mocha", description: "Chocolate coffee", price: 220, isVeg: true },
+        ],
+      },
+      {
+        category: "Cold Beverages",
+        items: [
+          { id: "tw6", name: "Iced Latte", description: "Chilled latte", price: 220, isVeg: true },
+          { id: "tw7", name: "Cold Brew", description: "Smooth cold brew", price: 250, isVeg: true },
+          { id: "tw8", name: "Frappé", description: "Blended ice coffee", price: 240, isVeg: true },
+          { id: "tw9", name: "Iced Mocha", description: "Chilled mocha", price: 230, isVeg: true },
+        ],
+      },
+      {
+        category: "Pastries",
+        items: [
+          { id: "tw10", name: "Croissant", description: "Flaky croissant", price: 120, isVeg: true },
+          { id: "tw11", name: "Muffin", description: "Chocolate muffin", price: 150, isVeg: true },
+          { id: "tw12", name: "Brownie", description: "Fudgy brownie", price: 140, isVeg: true },
+          { id: "tw13", name: "Cookie", description: "Soft cookie", price: 100, isVeg: true },
+          { id: "tw14", name: "Danish", description: "Sweet danish", price: 130, isVeg: true },
+        ],
+      },
+      {
+        category: "Teas",
+        items: [
+          { id: "tw15", name: "Green Tea", description: "Antioxidant rich", price: 150, isVeg: true },
+          { id: "tw16", name: "Chai Latte", description: "Spiced chai", price: 180, isVeg: true },
+          { id: "tw17", name: "Herbal Tea", description: "Calming herbs", price: 160, isVeg: true },
+          { id: "tw18", name: "Iced Tea", description: "Refreshing iced", price: 170, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "51887": {
+    restaurantName: "NRS Nandini",
+    menu: [
+      {
+        category: "South Indian",
+        items: [
+          { id: "nn1", name: "Masala Dosa", description: "Crispy filled dosa", price: 100, isVeg: true },
+          { id: "nn2", name: "Idli", description: "Steamed cakes", price: 60, isVeg: true },
+          { id: "nn3", name: "Vada", description: "Fried lentil", price: 70, isVeg: true },
+          { id: "nn4", name: "Upma", description: "Semolina savory", price: 80, isVeg: true },
+          { id: "nn5", name: "Pongal", description: "Rice lentil", price: 90, isVeg: true },
+        ],
+      },
+      {
+        category: "Biryani",
+        items: [
+          { id: "nn6", name: "Veg Biryani", description: "Vegetable rice", price: 200, isVeg: true },
+          { id: "nn7", name: "Chicken Biryani", description: "Chicken layered rice", price: 250, isVeg: false },
+          { id: "nn8", name: "Mutton Biryani", description: "Mutton biryani", price: 300, isVeg: false },
+          { id: "nn9", name: "Egg Biryani", description: "Egg rice", price: 220, isVeg: false },
+        ],
+      },
+      {
+        category: "Curries",
+        items: [
+          { id: "nn10", name: "Paneer Curry", description: "Creamy paneer", price: 180, isVeg: true },
+          { id: "nn11", name: "Chicken Curry", description: "Spicy chicken", price: 220, isVeg: false },
+          { id: "nn12", name: "Fish Curry", description: "Tangy fish", price: 250, isVeg: false },
+          { id: "nn13", name: "Veg Curry", description: "Mixed veg", price: 160, isVeg: true },
+          { id: "nn14", name: "Dal Fry", description: "Lentil fry", price: 150, isVeg: true },
+        ],
+      },
+      {
+        category: "Desserts",
+        items: [
+          { id: "nn15", name: "Payasam", description: "Sweet kheer", price: 80, isVeg: true },
+          { id: "nn16", name: "Gulab Jamun", description: "Syrupy balls", price: 70, isVeg: true },
+          { id: "nn17", name: "Ras Malai", description: "Creamy balls", price: 100, isVeg: true },
+          { id: "nn18", name: "Jalebi", description: "Crispy jalebi", price: 60, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "566424": {
+    restaurantName: "Faasos’s Signature Wraps & Rolls",
+    menu: [
+      {
+        category: "Wraps",
+        items: [
+          { id: "fs1", name: "Veg Wrap", description: "Veg filled wrap", price: 150, isVeg: true },
+          { id: "fs2", name: "Chicken Wrap", description: "Grilled chicken wrap", price: 180, isVeg: false },
+          { id: "fs3", name: "Paneer Wrap", description: "Paneer tikka wrap", price: 160, isVeg: true },
+          { id: "fs4", name: "Egg Wrap", description: "Egg masala wrap", price: 140, isVeg: false },
+          { id: "fs5", name: "Mutton Wrap", description: "Spicy mutton wrap", price: 200, isVeg: false },
+        ],
+      },
+      {
+        category: "Rolls",
+        items: [
+          { id: "fs6", name: "Veg Roll", description: "Veg stuffed roll", price: 120, isVeg: true },
+          { id: "fs7", name: "Chicken Roll", description: "Chicken kebab roll", price: 150, isVeg: false },
+          { id: "fs8", name: "Paneer Roll", description: "Paneer roll", price: 130, isVeg: true },
+          { id: "fs9", name: "Egg Roll", description: "Egg paratha roll", price: 110, isVeg: false },
+        ],
+      },
+      {
+        category: "Starters",
+        items: [
+          { id: "fs10", name: "French Fries", description: "Crispy fries", price: 100, isVeg: true },
+          { id: "fs11", name: "Chicken Nuggets", description: "Fried nuggets", price: 150, isVeg: false },
+          { id: "fs12", name: "Cheese Balls", description: "Cheesy balls", price: 120, isVeg: true },
+          { id: "fs13", name: "Onion Rings", description: "Fried rings", price: 110, isVeg: true },
+          { id: "fs14", name: "Veg Spring Rolls", description: "Crispy rolls", price: 130, isVeg: true },
+        ],
+      },
+      {
+        category: "Beverages",
+        items: [
+          { id: "fs15", name: "Coke", description: "Chilled cola", price: 50, isVeg: true },
+          { id: "fs16", name: "Sprite", description: "Lemon soda", price: 50, isVeg: true },
+          { id: "fs17", name: "Thums Up", description: "Strong cola", price: 50, isVeg: true },
+          { id: "fs18", name: "Water Bottle", description: "Mineral water", price: 20, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "801390": {
+    restaurantName: "Makhani Darbar",
+    menu: [
+      {
+        category: "North Indian Curries",
+        items: [
+          { id: "md1", name: "Butter Chicken", description: "Creamy butter chicken", price: 350, isVeg: false },
+          { id: "md2", name: "Paneer Makhani", description: "Paneer in tomato gravy", price: 300, isVeg: true },
+          { id: "md3", name: "Dal Makhani", description: "Creamy black lentils", price: 250, isVeg: true },
+          { id: "md4", name: "Chicken Makhani", description: "Makhani chicken", price: 340, isVeg: false },
+          { id: "md5", name: "Mutton Makhani", description: "Mutton in butter sauce", price: 400, isVeg: false },
+        ],
+      },
+      {
+        category: "Breads",
+        items: [
+          { id: "md6", name: "Butter Naan", description: "Buttery naan", price: 50, isVeg: true },
+          { id: "md7", name: "Garlic Naan", description: "Garlic flavored", price: 60, isVeg: true },
+          { id: "md8", name: "Kulcha", description: "Stuffed kulcha", price: 70, isVeg: true },
+          { id: "md9", name: "Paratha", description: "Layered paratha", price: 40, isVeg: true },
+        ],
+      },
+      {
+        category: "Rice",
+        items: [
+          { id: "md10", name: "Jeera Rice", description: "Cumin rice", price: 150, isVeg: true },
+          { id: "md11", name: "Veg Pulao", description: "Vegetable pulao", price: 200, isVeg: true },
+          { id: "md12", name: "Chicken Biryani", description: "Chicken rice", price: 300, isVeg: false },
+          { id: "md13", name: "Mutton Biryani", description: "Mutton rice", price: 350, isVeg: false },
+          { id: "md14", name: "Veg Biryani", description: "Veg layered rice", price: 250, isVeg: true },
+        ],
+      },
+      {
+        category: "Desserts",
+        items: [
+          { id: "md15", name: "Gulab Jamun", description: "Sweet balls", price: 100, isVeg: true },
+          { id: "md16", name: "Ras Malai", description: "Creamy dessert", price: 120, isVeg: true },
+          { id: "md17", name: "Kheer", description: "Rice pudding", price: 80, isVeg: true },
+          { id: "md18", name: "Ice Cream", description: "Vanilla ice cream", price: 90, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "2535": {
+    restaurantName: "Agra Sweets Banjara",
+    menu: [
+      {
+        category: "Sweets",
+        items: [
+          { id: "ab1", name: "Kaju Katli", description: "Cashew fudge", price: 500, isVeg: true },
+          { id: "ab2", name: "Badam Burfi", description: "Almond sweet", price: 450, isVeg: true },
+          { id: "ab3", name: "Peda", description: "Milk peda", price: 300, isVeg: true },
+          { id: "ab4", name: "Rasgulla", description: "Syrupy balls", price: 200, isVeg: true },
+          { id: "ab5", name: "Gulab Jamun", description: "Fried dumplings", price: 180, isVeg: true },
+        ],
+      },
+      {
+        category: "Snacks",
+        items: [
+          { id: "ab6", name: "Mixture", description: "Spicy mix", price: 150, isVeg: true },
+          { id: "ab7", name: "Chakli", description: "Crunchy spirals", price: 120, isVeg: true },
+          { id: "ab8", name: "Kara Boondi", description: "Gram flour balls", price: 130, isVeg: true },
+          { id: "ab9", name: "Murukku", description: "Twisted snack", price: 140, isVeg: true },
+        ],
+      },
+      {
+        category: "Dry Fruits Sweets",
+        items: [
+          { id: "ab10", name: "Dry Fruit Laddu", description: "Mixed dry fruits", price: 400, isVeg: true },
+          { id: "ab11", name: "Anjeer Barfi", description: "Fig fudge", price: 350, isVeg: true },
+          { id: "ab12", name: "Pista Roll", description: "Pistachio roll", price: 380, isVeg: true },
+          { id: "ab13", name: "Date Sweet", description: "Date based", price: 320, isVeg: true },
+          { id: "ab14", name: "Walnut Halwa", description: "Walnut pudding", price: 360, isVeg: true },
+        ],
+      },
+      {
+        category: "Savories",
+        items: [
+          { id: "ab15", name: "Samosa", description: "Potato filled", price: 30, isVeg: true },
+          { id: "ab16", name: "Kachori", description: "Spicy kachori", price: 40, isVeg: true },
+          { id: "ab17", name: "Dhokla", description: "Steamed dhokla", price: 50, isVeg: true },
+          { id: "ab18", name: "Pakora", description: "Veg pakora", price: 35, isVeg: true },
+        ],
+      },
+    ],
+  },
+
+  "224130": {
+    restaurantName: "Lo! – Low Carb and Keto Foods",
+    menu: [
+      {
+        category: "Keto Meals",
+        items: [
+          { id: "lo1", name: "Keto Chicken Curry", description: "Low carb chicken", price: 300, isVeg: false },
+          { id: "lo2", name: "Paneer Bhurji", description: "Scrambled paneer", price: 250, isVeg: true },
+          { id: "lo3", name: "Cauliflower Rice", description: "Keto rice substitute", price: 200, isVeg: true },
+          { id: "lo4", name: "Grilled Fish", description: "Herb grilled fish", price: 350, isVeg: false },
+          { id: "lo5", name: "Veg Stir Fry", description: "Low carb veggies", price: 220, isVeg: true },
+        ],
+      },
+      {
+        category: "Keto Snacks",
+        items: [
+          { id: "lo6", name: "Cheese Cubes", description: "Assorted cheese", price: 150, isVeg: true },
+          { id: "lo7", name: "Almond Cookies", description: "Keto cookies", price: 180, isVeg: true },
+          { id: "lo8", name: "Keto Chips", description: "Low carb chips", price: 120, isVeg: true },
+          { id: "lo9", name: "Nuts Mix", description: "Mixed nuts", price: 200, isVeg: true },
+        ],
+      },
+      {
+        category: "Keto Desserts",
+        items: [
+          { id: "lo10", name: "Keto Brownie", description: "Sugar free brownie", price: 150, isVeg: true },
+          { id: "lo11", name: "Coconut Ladoo", description: "Keto ladoo", price: 120, isVeg: true },
+          { id: "lo12", name: "Almond Flour Cake", description: "Low carb cake", price: 200, isVeg: true },
+          { id: "lo13", name: "Keto Ice Cream", description: "Sugar free ice cream", price: 180, isVeg: true },
+          { id: "lo14", name: "Chia Pudding", description: "Chia seed pudding", price: 160, isVeg: true },
+        ],
+      },
+      {
+        category: "Beverages",
+        items: [
+          { id: "lo15", name: "Bullet Coffee", description: "Butter coffee", price: 150, isVeg: true },
+          { id: "lo16", name: "Green Tea", description: "Unsweetened tea", price: 100, isVeg: true },
+          { id: "lo17", name: "Keto Smoothie", description: "Low carb smoothie", price: 180, isVeg: true },
+          { id: "lo18", name: "Almond Milk", description: "Unsweetened almond milk", price: 120, isVeg: true },
+        ],
+      },
+    ],
+  },
 };
 
 export default mockMenu;
