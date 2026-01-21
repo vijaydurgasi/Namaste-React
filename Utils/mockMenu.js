@@ -2235,6 +2235,51 @@ const mockMenu = {
       },
     ],
   },
+
+  "367769": {
+    restaurantName: "Lucky Restaurant",
+    menu: [
+      {
+        category: "North Indian",
+        items: [
+          { id: "lr1", name: "Butter Chicken", description: "Creamy chicken curry", price: 320, isVeg: false },
+          { id: "lr2", name: "Paneer Butter Masala", description: "Creamy paneer dish", price: 280, isVeg: true },
+          { id: "lr3", name: "Dal Makhani", description: "Buttery lentils", price: 250, isVeg: true },
+          { id: "lr4", name: "Chicken Tikka Masala", description: "Grilled chicken in gravy", price: 350, isVeg: false },
+          { id: "lr5", name: "Aloo Gobi", description: "Potato cauliflower curry", price: 220, isVeg: true },
+        ],
+      },
+      {
+        category: "Chinese",
+        items: [
+          { id: "lr6", name: "Fried Rice", description: "Veg fried rice", price: 200, isVeg: true },
+          { id: "lr7", name: "Chilli Chicken", description: "Spicy chicken", price: 280, isVeg: false },
+          { id: "lr8", name: "Noodles", description: "Veg hakka noodles", price: 220, isVeg: true },
+          { id: "lr9", name: "Manchurian", description: "Veg manchurian", price: 240, isVeg: true },
+        ],
+      },
+      {
+        category: "South Indian",
+        items: [
+          { id: "lr10", name: "Masala Dosa", description: "Crispy dosa", price: 150, isVeg: true },
+          { id: "lr11", name: "Idli Sambar", description: "Steamed idlis", price: 120, isVeg: true },
+          { id: "lr12", name: "Vada", description: "Fried vada", price: 100, isVeg: true },
+          { id: "lr13", name: "Uttapam", description: "Thick pancake", price: 140, isVeg: true },
+          { id: "lr14", name: "Pongal", description: "Rice lentil dish", price: 130, isVeg: true },
+        ],
+      },
+      {
+        category: "Desserts",
+        items: [
+          { id: "lr15", name: "Gulab Jamun", description: "Sweet dumplings", price: 100, isVeg: true },
+          { id: "lr16", name: "Ice Cream", description: "Assorted flavors", price: 120, isVeg: true },
+          { id: "lr17", name: "Brownie", description: "Chocolate brownie", price: 150, isVeg: true },
+          { id: "lr18", name: "Ras Malai", description: "Creamy sweet", price: 140, isVeg: true },
+        ],
+      },
+    ],
+  },
+
 };
 
 export default mockMenu;

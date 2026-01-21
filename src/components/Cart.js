@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { removeItem, clearCart } from "../../Redux/cartSlice";
 
+
 const Cart = () => {
     const cartItems = useSelector((store) => store.cart.items);
     const dispatch = useDispatch();
@@ -15,7 +16,7 @@ const Cart = () => {
 
     return (
         <div className="min-h-screen bg-[#f2f2f2] flex justify-center pt-6">
-            <div className="w-full max-w-[420px] bg-white rounded-lg shadow-[0_2px_8px_rgba(0,0,0,0.08)] overflow-hidden">
+            <div className="w-full max-w-[420px] bg-white rounded-lg shadow-[0_2px_8px_rgba(0,0,0,0.08)] overflow-hidden text-center">
 
                 <div className="px-4 py-3 border-b border-gray-200">
                     <h2 className="text-base font-semibold text-gray-900">
