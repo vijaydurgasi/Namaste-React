@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1769100416323" clover="3.2.0">
-  <project timestamp="1769100416323" name="All files">
+<coverage generated="1769149311025" clover="3.2.0">
+  <project timestamp="1769149311026" name="All files">
     <metrics statements="16" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="1" elements="24" coveredelements="9" complexity="0" loc="16" ncloc="16" packages="1" files="1" classes="1"/>
     <file name="Contact.js" path="C:\Users\VIJAY DURGASI\Desktop\React\D Food Delivary app\src\components\Contact.js">
       <metrics statements="16" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="1"/>
       <line num="3" count="1" type="stmt"/>
-      <line num="4" count="1" type="stmt"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="7" count="1" type="stmt"/>
-      <line num="9" count="1" type="stmt"/>
+      <line num="4" count="4" type="stmt"/>
+      <line num="5" count="4" type="stmt"/>
+      <line num="6" count="4" type="stmt"/>
+      <line num="7" count="4" type="stmt"/>
+      <line num="9" count="4" type="stmt"/>
       <line num="10" count="0" type="stmt"/>
       <line num="11" count="0" type="stmt"/>
       <line num="12" count="0" type="stmt"/>
       <line num="13" count="0" type="stmt"/>
       <line num="14" count="0" type="stmt"/>
       <line num="16" count="0" type="stmt"/>
-      <line num="19" count="1" type="stmt"/>
+      <line num="19" count="4" type="stmt"/>
       <line num="55" count="0" type="stmt"/>
       <line num="63" count="0" type="stmt"/>
       <line num="70" count="0" type="stmt"/>
