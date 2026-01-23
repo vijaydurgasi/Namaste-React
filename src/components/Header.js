@@ -24,7 +24,7 @@ const Header = () => {
                 <img
                     className="w-[100px] h-[200px] object-cover mt-1 mb-1"
                     src={new URL("../../images/logo.jpg", import.meta.url)}
-                    alt="" style={{ width: "200px" }} />
+                    alt="App Logo" style={{ width: "200px" }} />
 
             </div>
             <div className="nav-items">
