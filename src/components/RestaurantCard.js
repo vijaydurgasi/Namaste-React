@@ -13,10 +13,10 @@ export const RestaurantCard = ({ resData }) => {
         costForTwo,
         avgRating,
         sla
-    } = resData?.info;
+    } = resData?.info || {};
 
     return (
-        <div className="w-[200px] h-[320px] border border-[#dbcdcd] p-2.5 rounded-x1 bg-white
+        <div data-testid="res-card" className="w-[200px] h-[320px] border border-[#dbcdcd] p-2.5 rounded-x1 bg-white
          flex flex-col text-center transition-all duratio-300 hover:scale-105 
          hover:shadow-xl cursor-pointer rounded-xl">
 

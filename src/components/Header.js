@@ -19,7 +19,7 @@ const Header = () => {
     const totalItems = cartItems.reduce((sum, item) => sum + (item.quantity || 1), 0);
 
     return (
-        <div className="flex justify-between items- border border-black">
+        <div className="flex justify-between items- border border-black bg-slate-100 shadow-sm">
             <div className="logo-container">
                 <img
                     className="w-[100px] h-[200px] object-cover mt-1 mb-1 ml-1 rounded-2xl"
