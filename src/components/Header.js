@@ -24,7 +24,7 @@ const Header = () => {
                 <img
                     className="w-[100px] h-[200px] object-cover mt-1 mb-1 ml-1 rounded-2xl"
                     // src={new URL("../../images/logo.jpg", import.meta.url)}
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdowOPjag-hQKDHQXhyue9wzFdZ9H1hLW09Q&s"
+                    src="https://res.cloudinary.com/df1ebqujt/image/upload/v1769318118/logo.png"
                     alt="App Logo" style={{ width: "200px" }} />
 
             </div>

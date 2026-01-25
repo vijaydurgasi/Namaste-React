@@ -2279,6 +2279,169 @@ const mockMenu = {
       },
     ],
   },
+  "7203": {
+    restaurantName: "Taj Mahal Abids",
+    menu: [
+      {
+        category: "Recommended",
+        items: [
+          { id: "1", name: "Masala Dosa", description: "Crispy dosa stuffed with spiced potatoes, served with sambhar and chutneys", price: 90, isVeg: true },
+          { id: "2", name: "TMH Special Thali", description: "Unlimited servings of South & North Indian dishes including rice, rotis, curries, dal, and dessert", price: 350, isVeg: true },
+          { id: "3", name: "Paneer Butter Masala", description: "Cottage cheese in creamy tomato gravy", price: 220, isVeg: true },
+          { id: "4", name: "Veg Dum Biryani", description: "Aromatic layered vegetable biryani with spices", price: 190, isVeg: true },
+          { id: "5", name: "Filter Coffee", description: "Freshly brewed South Indian coffee", price: 40, isVeg: true }
+        ],
+      },
+      {
+        category: "Breakfast Specials",
+        items: [
+          { id: "6", name: "Idli (3 pcs)", description: "Steamed rice cakes with sambhar and coconut chutney", price: 60, isVeg: true },
+          { id: "7", name: "Button Vada", description: "Deep-fried lentil fritters with a unique button shape", price: 70, isVeg: true },
+          { id: "8", name: "Puri Bhaji (4 pcs)", description: "Fluffy puris with potato curry", price: 80, isVeg: true },
+          { id: "9", name: "Palak Paneer Dosa", description: "Dosa filled with spinach and cottage cheese", price: 100, isVeg: true },
+          { id: "10", name: "Cheese Dosa", description: "Dosa topped with grated cheese", price: 110, isVeg: true }
+        ],
+      },
+      {
+        category: "Thalis & Meals",
+        items: [
+          { id: "11", name: "South Indian Thali", description: "Rice, sambhar, rasam, veggies, papad, and curd", price: 250, isVeg: true },
+          { id: "12", name: "North Indian Thali", description: "Paneer curry, dal makhani, rotis, rice, salad, and pickle", price: 300, isVeg: true },
+          { id: "13", name: "Veg Dum Biryani Thali", description: "Aromatic veg biryani with raita and salan", price: 280, isVeg: true }
+        ],
+      },
+      {
+        category: "North Indian Curries & Breads",
+        items: [
+          { id: "14", name: "Palak Paneer", description: "Spinach and paneer curry", price: 200, isVeg: true },
+          { id: "15", name: "Veg Kolhapuri", description: "Spicy mixed vegetable curry", price: 180, isVeg: true },
+          { id: "16", name: "Bread Basket", description: "Assortment of 2 rotis, 1 naan, 1 butter naan, 1 masala kulcha, 1 pudina paratha, and 1 lachha paratha", price: 150, isVeg: true }
+        ],
+      },
+      {
+        category: "South Indian Snacks",
+        items: [
+          { id: "17", name: "Mysore Masala Dosa", description: "Dosa with spicy red chutney and potato filling", price: 100, isVeg: true },
+          { id: "18", name: "Rava Dosa", description: "Crispy semolina dosa with onions and spices", price: 90, isVeg: true },
+          { id: "19", name: "Uttapam", description: "Thick pancake topped with vegetables", price: 80, isVeg: true }
+        ],
+      },
+      {
+        category: "Beverages",
+        items: [
+          { id: "20", name: "Masala Chai", description: "Spiced Indian tea", price: 40, isVeg: true },
+          { id: "21", name: "Buttermilk", description: "Chilled spiced yogurt drink", price: 50, isVeg: true },
+          { id: "22", name: "Fresh Lime Soda", description: "Refreshing lime and soda mix", price: 60, isVeg: true }
+        ],
+      }
+    ],
+  },
+  "27739": {
+    restaurantName: "Cafe Niloufer Classic",
+    menu: [
+      {
+        category: "Recommended",
+        items: [
+          { id: "111", name: "Niloufer Irani Chai", description: "Signature Irani tea brewed to perfection", price: 30, isVeg: true },
+          { id: "222", name: "Osmania Biscuits", description: "Flaky, buttery biscuits, perfect with tea", price: 50, isVeg: true },
+          { id: "333", name: "Bun Maska", description: "Soft bun slathered with butter and sprinkled with sugar", price: 40, isVeg: true },
+          { id: "444", name: "Kesar Chai", description: "Saffron-infused Irani tea", price: 40, isVeg: true },
+          { id: "555", name: "Dry Fruit Biscuits", description: "Biscuits loaded with nuts and dry fruits", price: 60, isVeg: true }
+        ],
+      },
+      {
+        category: "Beverages",
+        items: [
+          { id: "666", name: "Masala Chai", description: "Spiced tea with ginger and cardamom", price: 35, isVeg: true },
+          { id: "777", name: "Lemon Tea", description: "Refreshing tea with a hint of lemon", price: 35, isVeg: true },
+          { id: "888", name: "Sugar Free Tea", description: "Irani tea without sugar", price: 30, isVeg: true },
+          { id: "999", name: "Niloufer Tea Kettle", description: "Pot of signature tea for sharing", price: 150, isVeg: true },
+          { id: "1000", name: "Kesar Tea Kettle", description: "Saffron tea pot for sharing", price: 200, isVeg: true }
+        ],
+      },
+      {
+        category: "Bakery & Snacks",
+        items: [
+          { id: "1111", name: "Fruit Biscuits", description: "Sweet biscuits with fruit flavors", price: 50, isVeg: true },
+          { id: "1222", name: "Tie Biscuits", description: "Crunchy twisted biscuits", price: 40, isVeg: true },
+          { id: "1333", name: "Khari Biscuits", description: "Puffed pastry biscuits", price: 45, isVeg: true },
+          { id: "1444", name: "Vegetable Puff", description: "Flaky puff filled with spiced vegetables", price: 30, isVeg: true },
+          { id: "1555", name: "Samosa", description: "Crispy fried pastry with potato filling", price: 25, isVeg: true }
+        ],
+      },
+      {
+        category: "Breakfast Specials",
+        items: [
+          { id: "1666", name: "Masala Oats", description: "Savory oats with spices and vegetables", price: 80, isVeg: true },
+          { id: "1777", name: "Raagi Upma", description: "Healthy millet upma with seasonings", price: 70, isVeg: true },
+          { id: "1888", name: "Fresh Cut Fruits", description: "Assorted seasonal fruits", price: 100, isVeg: true },
+          { id: "1999", name: "Masala Quinoa", description: "Spiced quinoa with veggies", price: 90, isVeg: true }
+        ],
+      },
+      {
+        category: "Sandwiches & Fast Food",
+        items: [
+          { id: "2000", name: "Veg Sandwich", description: "Grilled sandwich with vegetables and cheese", price: 60, isVeg: true },
+          { id: "2111", name: "Pizza Slice", description: "Vegetarian pizza slice with toppings", price: 80, isVeg: true },
+          { id: "2222", name: "French Fries", description: "Crispy golden fries", price: 50, isVeg: true }
+        ],
+      }
+    ],
+  },
+
+  "34028": {
+    restaurantName: "Vellanki Foods",
+    menu: [
+      {
+        category: "Recommended",
+        items: [
+          { id: "340281", name: "Andhra Avakaya Pickle", description: "Spicy raw mango pickle - Signature item", price: 280, isVeg: true },
+          { id: "340282", name: "Ariselu (Ghee)", description: "Traditional jaggery rice sweet", price: 380, isVeg: true },
+          { id: "340283", name: "Chegodi (Small)", description: "Crispy ring shaped snack", price: 160, isVeg: true },
+          { id: "340284", name: "Bellam Sunnundalu", description: "Jaggery urad dal laddu", price: 320, isVeg: true },
+          { id: "340285", name: "Kaju Katli", description: "Premium cashew fudge", price: 420, isVeg: true }
+        ],
+      },
+      {
+        category: "Traditional Sweets",
+        items: [
+          { id: "340286", name: "Ariselu (Oil)", description: "Classic Andhra sweet with rice flour", price: 340, isVeg: true },
+          { id: "340287", name: "Pootharekulu", description: "Thin rice paper sweet with sugar", price: 280, isVeg: true },
+          { id: "340288", name: "Bobbatlu / Puran Poli", description: "Sweet stuffed flatbread", price: 60, isVeg: true },
+          { id: "340289", name: "Badam Burfi", description: "Rich almond fudge", price: 420, isVeg: true },
+          { id: "3402810", name: "Mysore Pak", description: "Gram flour ghee sweet", price: 350, isVeg: true }
+        ],
+      },
+      {
+        category: "Snacks & Namkeen",
+        items: [
+          { id: "3402811", name: "Janthikalu", description: "Crispy rice flour murukku", price: 170, isVeg: true },
+          { id: "3402812", name: "Murukulu", description: "Spicy traditional murukku", price: 180, isVeg: true },
+          { id: "3402813", name: "Mixture", description: "Classic spicy namkeen mix", price: 190, isVeg: true },
+          { id: "3402814", name: "Big Samosa", description: "Large spicy aloo samosa", price: 35, isVeg: true },
+          { id: "3402815", name: "Vampoosa", description: "Sweet & spicy diamond cuts", price: 160, isVeg: true }
+        ],
+      },
+      {
+        category: "Pickles",
+        items: [
+          { id: "3402816", name: "Gongura Pickle", description: "Tangy sorrel leaves pickle", price: 260, isVeg: true },
+          { id: "3402817", name: "Tomato Pickle", description: "Spicy homemade tomato pickle", price: 240, isVeg: true },
+          { id: "3402818", name: "Lime Pickle", description: "Traditional nimbu ka achar", price: 220, isVeg: true },
+          { id: "3402819", name: "Amla Pickle", description: "Gooseberry pickle", price: 230, isVeg: true }
+        ],
+      },
+      {
+        category: "Spice Powders",
+        items: [
+          { id: "3402820", name: "Nalla Karam", description: "Spicy black chilli powder", price: 180, isVeg: true },
+          { id: "3402821", name: "Karivepaku Karam", description: "Curry leaves spice powder", price: 170, isVeg: true },
+          { id: "3402822", name: "Pudina Karam", description: "Mint based spicy powder", price: 160, isVeg: true },
+          { id: "3402823", name: "Garlic Karam", description: "Fresh garlic spice mix", price: 190, isVeg: true }
+        ],
+      }
+    ],
+  },
 
 };
 

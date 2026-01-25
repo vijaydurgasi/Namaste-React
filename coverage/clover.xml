@@ -1,31 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1769272807393" clover="3.2.0">
-  <project timestamp="1769272807393" name="All files">
-    <metrics statements="22" coveredstatements="17" conditionals="6" coveredconditionals="4" methods="10" coveredmethods="6" elements="38" coveredelements="27" complexity="0" loc="22" ncloc="22" packages="1" files="1" classes="1"/>
-    <file name="Body.js" path="C:\Users\VIJAY DURGASI\OneDrive\Desktop\React\D Food Delivary app\src\components\Body.js">
-      <metrics statements="22" coveredstatements="17" conditionals="6" coveredconditionals="4" methods="10" coveredmethods="6"/>
-      <line num="9" count="1" type="stmt"/>
-      <line num="10" count="4" type="stmt"/>
-      <line num="17" count="4" type="stmt"/>
-      <line num="19" count="4" type="stmt"/>
-      <line num="21" count="4" type="stmt"/>
-      <line num="23" count="4" type="stmt"/>
-      <line num="25" count="4" type="stmt"/>
-      <line num="26" count="9" type="stmt"/>
-      <line num="29" count="4" type="cond" truecount="1" falsecount="1"/>
-      <line num="30" count="0" type="stmt"/>
-      <line num="33" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="34" count="1" type="stmt"/>
-      <line num="37" count="3" type="stmt"/>
-      <line num="47" count="1" type="stmt"/>
-      <line num="53" count="1" type="stmt"/>
-      <line num="55" count="3" type="stmt"/>
-      <line num="59" count="1" type="stmt"/>
-      <line num="69" count="0" type="stmt"/>
-      <line num="70" count="0" type="stmt"/>
-      <line num="72" count="0" type="stmt"/>
-      <line num="82" count="0" type="stmt"/>
-      <line num="87" count="7" type="stmt"/>
-    </file>
+<coverage generated="1769318403396" clover="3.2.0">
+  <project timestamp="1769318403397" name="All files">
+    <metrics statements="109" coveredstatements="84" conditionals="35" coveredconditionals="16" methods="44" coveredmethods="25" elements="188" coveredelements="125" complexity="0" loc="109" ncloc="109" packages="3" files="14" classes="14"/>
+    <package name="Redux">
+      <metrics statements="9" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="AppStore.js" path="C:\Users\VIJAY DURGASI\OneDrive\Desktop\React\D Food Delivary app\Redux\AppStore.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+      <file name="cartSlice.js" path="C:\Users\VIJAY DURGASI\OneDrive\Desktop\React\D Food Delivary app\Redux\cartSlice.js">
+        <metrics statements="8" coveredstatements="2" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="Utils">
+      <metrics statements="33" coveredstatements="33" conditionals="2" coveredconditionals="1" methods="10" coveredmethods="8"/>
+      <file name="UserContext.js" path="C:\Users\VIJAY DURGASI\OneDrive\Desktop\React\D Food Delivary app\Utils\UserContext.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="3" type="stmt"/>
+      </file>
+      <file name="constant.js" path="C:\Users\VIJAY DURGASI\OneDrive\Desktop\React\D Food Delivary app\Utils\constant.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+      </file>
+      <file name="useOnlineStatus.js" path="C:\Users\VIJAY DURGASI\OneDrive\Desktop\React\D Food Delivary app\Utils\useOnlineStatus.js">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="3"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="19" count="10" type="stmt"/>
+      </file>
+      <file name="useRestaurantApi.js" path="C:\Users\VIJAY DURGASI\OneDrive\Desktop\React\D Food Delivary app\Utils\useRestaurantApi.js">
+        <metrics statements="17" coveredstatements="17" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="5"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components">
+      <metrics statements="67" coveredstatements="48" conditionals="29" coveredconditionals="15" methods="30" coveredmethods="17"/>
+      <file name="About.js" path="C:\Users\VIJAY DURGASI\OneDrive\Desktop\React\D Food Delivary app\src\components\About.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+      <file name="Body.js" path="C:\Users\VIJAY DURGASI\OneDrive\Desktop\React\D Food Delivary app\src\components\Body.js">
+        <metrics statements="22" coveredstatements="17" conditionals="6" coveredconditionals="4" methods="10" coveredmethods="6"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
+        <line num="25" count="4" type="stmt"/>
+        <line num="26" count="9" type="stmt"/>
+        <line num="29" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="33" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="37" count="3" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="55" count="3" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="87" count="7" type="stmt"/>
+      </file>
+      <file name="Contact.js" path="C:\Users\VIJAY DURGASI\OneDrive\Desktop\React\D Food Delivary app\src\components\Contact.js">
+        <metrics statements="16" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="5" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+      </file>
+      <file name="Header.js" path="C:\Users\VIJAY DURGASI\OneDrive\Desktop\React\D Food Delivary app\src\components\Header.js">
+        <metrics statements="8" coveredstatements="8" conditionals="6" coveredconditionals="2" methods="4" coveredmethods="3"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="12" count="6" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="17" count="11" type="stmt"/>
+        <line num="19" count="6" type="cond" truecount="0" falsecount="2"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="60" count="1" type="cond" truecount="1" falsecount="1"/>
+      </file>
+      <file name="Recommend.js" path="C:\Users\VIJAY DURGASI\OneDrive\Desktop\React\D Food Delivary app\src\components\Recommend.js">
+        <metrics statements="5" coveredstatements="3" conditionals="8" coveredconditionals="3" methods="2" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="8" count="3" type="cond" truecount="3" falsecount="1"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+      </file>
+      <file name="RestaurantCard.js" path="C:\Users\VIJAY DURGASI\OneDrive\Desktop\React\D Food Delivary app\src\components\RestaurantCard.js">
+        <metrics statements="9" coveredstatements="6" conditionals="7" coveredconditionals="5" methods="4" coveredmethods="2"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="7" count="8" type="stmt"/>
+        <line num="16" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="18" count="8" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="48" count="4" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+      </file>
+      <file name="User.js" path="C:\Users\VIJAY DURGASI\OneDrive\Desktop\React\D Food Delivary app\src\components\User.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+      <file name="shimmer.js" path="C:\Users\VIJAY DURGASI\OneDrive\Desktop\React\D Food Delivary app\src\components\shimmer.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="7" count="48" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
