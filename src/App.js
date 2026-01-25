@@ -1,16 +1,19 @@
-import React from "react"
+import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Body";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Cart from "./components/Cart";
-import "../index.css";
+
+import { createHashRouter, RouterProvider, Outlet } from "react-router-dom";
 import { Provider } from "react-redux";
 import appstore from "../Redux/AppStore";
+import "../index.css";
+
+/* ---------------- App Layout ---------------- */
 
 const AppLayout = () => {
     return (
@@ -23,42 +26,37 @@ const AppLayout = () => {
     );
 };
 
-const appRouter = createBrowserRouter([
+/* ---------------- Router ---------------- */
+
+const appRouter = createHashRouter([
     {
         path: "/",
         element: <AppLayout />,
         children: [
             {
                 path: "/",
-                element: <Body />
+                element: <Body />,
             },
-
             {
                 path: "/about",
-                element: <About />
+                element: <About />,
             },
-
             {
                 path: "/contact",
-                element: <Contact />
+                element: <Contact />,
             },
-
             {
                 path: "/restaurants/:resId",
-                element: <RestaurantMenu />
+                element: <RestaurantMenu />,
             },
-
             {
                 path: "/cart",
-                element: <Cart />
+                element: <Cart />,
             },
         ],
-        errorElement: <Error />
+        errorElement: <Error />,
     },
-
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={appRouter} />);
-
-
