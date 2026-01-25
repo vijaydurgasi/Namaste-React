@@ -17,12 +17,15 @@
   "license": "ISC",
   "author": "vijay Durgasi",
   "type": "commonjs",
-  "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
-    "test": "jest",
-    "watch-test": "jest --watch"
-  },
+ "scripts": {
+  "start": "parcel index.html",
+  "build": "parcel build index.html --public-url ./",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+  "test": "jest",
+  "watch-test": "jest --watch"
+},
+
   "devDependencies": {
     "@babel/core": "^7.28.6",
     "@babel/preset-env": "^7.28.6",
@@ -32,7 +35,6 @@
     "@testing-library/user-event": "^14.6.1",
     "autoprefixer": "^10.4.23",
     "babel-jest": "^30.2.0",
-    "gh-pages": "^6.3.0",
     "jest": "^30.2.0",
     "jest-environment-jsdom": "^30.2.0",
     "parcel": "^2.16.3",
