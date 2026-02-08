@@ -5,5 +5,8 @@
       "@parcel/transformer-js",
       "@parcel/transformer-react-refresh-wrap"
     ]
+  },
+  "optimizers": {
+    "*.{png,jpg,jpeg,webp}": []
   }
 }
