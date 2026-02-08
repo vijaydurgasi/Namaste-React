@@ -30,18 +30,20 @@ const Recommend = ({ restaurants, show, onToggle }) => {
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${show ? "max-h-[450px] opacity-100" : "max-h-0 opacity-0"
                     }`}
             >
-                <div
-                    ref={scrollRef}
-                    className="flex gap-4 overflow-x-auto scrollbar-hide pb-2"
-                >
-                    {restaurants.map((restaurant) => (
-                        <div
-                            key={restaurant.info.id}
-                            className="flex-shrink-0 cursor-default"
-                        >
-                            <RestaurantCard resData={restaurant} />
-                        </div>
-                    ))}
+                <div className="overflow-x-auto scrollbar-hide">
+                    <div
+                        ref={scrollRef}
+                        className="flex w-max gap-2 pb-2"
+                    >
+                        {restaurants.map((restaurant) => (
+                            <div
+                                key={restaurant.info.id}
+                                className="flex-shrink-0 cursor-default"
+                            >
+                                <RestaurantCard resData={restaurant} />
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

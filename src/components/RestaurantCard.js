@@ -16,9 +16,9 @@ export const RestaurantCard = ({ resData }) => {
     } = resData?.info || {};
 
     return (
-        <div data-testid="res-card" className="w-[200px] h-[320px] border border-[#dbcdcd] p-2.5 rounded-x1 bg-white
-         flex flex-col text-center transition-all duratio-300 hover:scale-105 
-         hover:shadow-xl cursor-pointer rounded-xl">
+        <div data-testid="res-card" className="ml-2 w-[180px] h-[320px] border border-[#dbcdcd] p-2.5 bg-white
+        flex flex-col text-center transition-transform duration-300 
+        hover:scale-105 hover:shadow-xl cursor-pointer rounded-xl">
 
             <img
                 src={CDN_URL + cloudinaryImageId}
