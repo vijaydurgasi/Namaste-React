@@ -19,53 +19,68 @@ const Header = () => {
     const totalItems = cartItems.reduce((sum, item) => sum + (item.quantity || 1), 0);
 
     return (
-        <div className="flex justify-between items- border border-black bg-slate-100 shadow-sm">
-            <div className="logo-container">
-                <img
-                    className="w-[100px] h-[200px] object-cover mt-1 mb-1 ml-1 rounded-2xl"
-                    src="https://res.cloudinary.com/df1ebqujt/image/upload/v1769318118/logo.png"
-                    alt="App Logo" style={{ width: "200px" }} />
+        <header className="w-full bg-slate-100 shadow-sm border-b">
+            <div className="flex items-center justify-between 
+                    px-3 sm:px-5 md:px-8 
+                    py-2 sm:py-3">
 
+                <Link to="/" className="flex-shrink-0">
+                    <img
+                        src="https://res.cloudinary.com/df1ebqujt/image/upload/v1769318118/logo.png"
+                        alt="App Logo"
+                        className="w-24 sm:w-36 md:w-36 h-auto object-contain rounded-xl"
+                    />
+                </Link>
+
+                <div className="flex items-center 
+                      gap-4 sm:gap-6 md:gap-8 
+                      font-semibold 
+                      text-xs sm:text-sm md:text-base">
+
+                    <span>
+                        {onlineStatus ? "🟢" : "🔴"}
+                    </span>
+
+                    <Link to="/" className="hover:text-orange-500 whitespace-nowrap">
+                        Home
+                    </Link>
+
+                    <Link to="/about" className="hover:text-orange-500 whitespace-nowrap">
+                        About
+                    </Link>
+
+                    <Link to="/contact" className="hover:text-orange-500 whitespace-nowrap">
+                        Contact
+                    </Link>
+
+                    <Link to="/cart" className="flex items-center gap-1 whitespace-nowrap">
+                        <img
+                            src={CART_URL}
+                            className="w-5 sm:w-6 md:w-7 h-auto"
+                            alt="Cart"
+                        />
+                        <span>{totalItems}</span>
+                    </Link>
+
+                    <button
+                        onClick={() =>
+                            setbtn_inout(btn_inout === "Login" ? "Logout" : "Login")
+                        }
+                        className="px-3 sm:px-4 
+                     py-1 
+                     border rounded-md 
+                     text-xs sm:text-sm md:text-base
+                     hover:bg-gray-100 transition"
+                    >
+                        {btn_inout}
+                    </button>
+
+                </div>
             </div>
-            <div className="nav-items">
-                <ul className="flex item-center gap-8 font-bold mt-24 mr-2">
+        </header>
+    );
 
-                    <li > onlineStatus : {onlineStatus ? "🟢" : "🔴"}</li>
 
-                    <li className="no-underline text-black">
-                        <Link to="/">Home</Link>
-                    </li>
-
-                    <li className="no-underline text-black">
-                        <Link to="/about">About Us</Link>
-                    </li>
-
-                    <li className="no-underline text-black">
-                        <Link to="/contact">Contact Us</Link>
-                    </li>
-
-                    <li>
-                        <Link to="/cart">
-                            <img
-                                src={CART_URL}
-                                className="w-6 h-6 object-contain inline-block cursor-pointer"
-                                alt="Cart Icon"
-                            />
-                            ({totalItems})
-                        </Link>
-                    </li>
-
-                    <button className=" relative -top-[3px] px-5 py-1 border rounded-md text-sm font-semibold cursor-pointer transition hover:bg-gray-100 " onClick={() => {
-                        btn_inout === "Login" ? setbtn_inout("Logout") : setbtn_inout("Login");
-                    }}
-                    >{btn_inout}</button>
-
-                    {/* <li className="font-bold">{loggedInUser}</li> */}
-
-                </ul>
-            </div>
-        </div>
-    )
 };
 
 export default Header;
