@@ -38,7 +38,7 @@ const Header = () => {
                       text-xs sm:text-sm md:text-base">
 
                     <span>
-                        {onlineStatus ? "🟢" : "🔴"}
+                        {onlineStatus ? "🟢" : "🔴"} onlinestatus
                     </span>
 
                     <Link to="/" className="hover:text-orange-500 whitespace-nowrap">
