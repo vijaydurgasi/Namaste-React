@@ -16,30 +16,43 @@ export const RestaurantCard = ({ resData }) => {
     } = resData?.info || {};
 
     return (
-        <div data-testid="res-card" className="ml-2 w-[180px] h-[320px] border border-[#dbcdcd] p-2.5 bg-white
-        flex flex-col text-center transition-transform duration-300 
-        hover:scale-105 hover:shadow-xl cursor-pointer rounded-xl">
-
+        <div
+            data-testid="res-card"
+            className="w-full bg-white border border-gray-200 p-3 
+  flex flex-col rounded-xl 
+  transition-transform duration-300 
+  hover:scale-105 hover:shadow-xl"
+        >
             <img
                 src={CDN_URL + cloudinaryImageId}
                 alt={name}
-                className="w-full h-[140px] object-cover rounded-lg"
+                className="w-full h-40 md:h-44 object-cover rounded-lg"
                 onError={(e) => {
                     e.currentTarget.onerror = null;
                     e.currentTarget.src = FALLBACK_IMAGE;
                 }}
             />
 
-            <h3 className="font-semibold mt-2" >{name}</h3>
-            <p className="text-sm text-gray-600 min-h-[40px] leading-5 line-clamp-2">{(cuisines || []).join(", ")}</p>
-            <h3 className="text-sm font-medium ">{costForTwo}</h3>
-            <div className="flex justify-between items-center mt-auto">
-                <span className="flex items-center gap-[2px] bg-green-700 text-white text-[12px] px-2 py-[2px] rounded-md font-semibold">
+            <h3 className="font-semibold mt-3 text-base md:text-lg text-left">
+                {name}
+            </h3>
+
+            <p className="text-sm text-gray-600 mt-1 line-clamp-2 text-left">
+                {(cuisines || []).join(", ")}
+            </p>
+
+            <h3 className="text-sm font-medium mt-1 text-left">
+                {costForTwo}
+            </h3>
+
+            <div className="flex justify-between items-center mt-3">
+                <span className="flex items-center gap-1 bg-green-700 text-white text-xs px-2 py-1 rounded-md font-semibold">
                     ★ {avgRating}
                 </span>
-                <span className="text-sm text-gray-600">{sla?.deliveryTime ?? "--"}min</span>
+                <span className="text-sm text-gray-600">
+                    {sla?.deliveryTime ?? "--"} min
+                </span>
             </div>
-
         </div>
     )
 };

@@ -20,62 +20,84 @@ const Header = () => {
 
     return (
         <header className="w-full bg-slate-100 shadow-sm border-b">
-            <div className="flex items-center justify-between 
-                    px-3 sm:px-5 md:px-8 
-                    py-2 sm:py-3">
+            <div className="px-4 md:px-8 py-3">
 
-                <Link to="/" className="flex-shrink-0">
-                    <img
-                        src="https://res.cloudinary.com/df1ebqujt/image/upload/v1769318118/logo.png"
-                        alt="App Logo"
-                        className="w-24 sm:w-36 md:w-36 h-auto object-contain rounded-xl"
-                    />
-                </Link>
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between">
 
-                <div className="flex items-center 
-                      gap-4 sm:gap-6 md:gap-8 
-                      font-semibold 
-                      text-xs sm:text-sm md:text-base">
+                    {/* ================== MOBILE TOP ROW ================== */}
+                    <div className="flex items-center justify-between w-full md:w-auto">
 
-                    <span>
-                        Online {onlineStatus ? "🟢" : "🔴"}
-                    </span>
+                        {/* Logo */}
+                        <Link to="/" className="flex-shrink-0">
+                            <img
+                                src="https://res.cloudinary.com/df1ebqujt/image/upload/v1769318118/logo.png"
+                                alt="App Logo"
+                                className="w-32 md:w-44 h-auto object-contain"
+                            />
+                        </Link>
 
-                    <Link to="/" className="hover:text-orange-500 whitespace-nowrap">
-                        Home
-                    </Link>
+                        {/* Mobile Cart + Login */}
+                        <div className="flex items-center gap-3 md:hidden">
 
-                    <Link to="/about" className="hover:text-orange-500 whitespace-nowrap">
-                        About
-                    </Link>
+                            <Link to="/cart" className="flex items-center gap-1">
+                                <img
+                                    src={CART_URL}
+                                    className="w-5 h-auto"
+                                    alt="Cart"
+                                />
+                                <span className="font-semibold">{totalItems}</span>
+                            </Link>
 
-                    <Link to="/contact" className="hover:text-orange-500 whitespace-nowrap">
-                        Contact
-                    </Link>
+                            <button
+                                onClick={() =>
+                                    setbtn_inout(btn_inout === "Login" ? "Logout" : "Login")
+                                }
+                                className="px-3 py-1 border rounded-md text-sm transition duration-200 hover:bg-orange-500 hover:text-white hover:border-orange-500"
+                            >
+                                {btn_inout}
+                            </button>
 
-                    <Link to="/cart" className="flex items-center gap-1 whitespace-nowrap">
-                        <img
-                            src={CART_URL}
-                            className="w-5 sm:w-6 md:w-7 h-auto"
-                            alt="Cart"
-                        />
-                        <span>{totalItems}</span>
-                    </Link>
+                        </div>
+                    </div>
 
-                    <button
-                        onClick={() =>
-                            setbtn_inout(btn_inout === "Login" ? "Logout" : "Login")
-                        }
-                        className="px-3 sm:px-4 
-                     py-1 
-                     border rounded-md 
-                     text-xs sm:text-sm md:text-base
-                     hover:bg-gray-100 transition"
-                    >
-                        {btn_inout}
-                    </button>
+                    {/* ================== MOBILE NAVIGATION ================== */}
+                    <div className="flex items-center justify-between mt-3 text-sm font-medium md:hidden">
+                        <div className="flex items-center gap-4">
+                            <Link to="/" className="hover:text-orange-500">Home</Link>
+                            <Link to="/about" className="hover:text-orange-500">About</Link>
+                            <Link to="/contact" className="hover:text-orange-500">Contact</Link>
+                        </div>
+                    </div>
+
+                    {/* ================== DESKTOP NAVIGATION ================== */}
+                    <div className="hidden md:flex items-center gap-6 text-base font-medium">
+
+                        <Link to="/" className="hover:text-orange-500">Home</Link>
+                        <Link to="/about" className="hover:text-orange-500">About</Link>
+                        <Link to="/contact" className="hover:text-orange-500">Contact</Link>
+
+                        <Link to="/cart" className="flex items-center gap-1">
+                            <img
+                                src={CART_URL}
+                                className="w-6 h-auto"
+                                alt="Cart"
+                            />
+                            <span className="font-semibold">{totalItems}</span>
+                        </Link>
+
+                        <button
+                            onClick={() =>
+                                setbtn_inout(btn_inout === "Login" ? "Logout" : "Login")
+                            }
+                            className="px-3 py-1 border rounded-md text-sm transition duration-200 hover:bg-orange-500 hover:text-white hover:border-orange-500"
+                        >
+                            {btn_inout}
+                        </button>
+
+                    </div>
 
                 </div>
+
             </div>
         </header>
     );
