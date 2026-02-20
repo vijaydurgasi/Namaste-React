@@ -44,8 +44,8 @@ const mockMenu = {
     ],
   },
 
-  "142670": {
-    restaurantName: "Shah Ghouse Hotel & Restaurant",
+  "639526": {
+    restaurantName: "Dum safar Biryani",
     menu: [
       {
         category: "Recommended",
@@ -89,7 +89,7 @@ const mockMenu = {
     ],
   },
 
-  "2769": {
+  "2796": {
     restaurantName: "Blue Fox",
     menu: [
       {
@@ -397,8 +397,8 @@ const mockMenu = {
     ],
   },
 
-  "5285": {
-    restaurantName: "Chicha’s",
+  "518650": {
+    restaurantName: "Burger king",
     menu: [
       {
         category: "Burgers",

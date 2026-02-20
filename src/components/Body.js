@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import RestaurantCard, { WithPromotedLabel } from "./RestaurantCard";
 import Shimmer from "./shimmer";
 import { Link } from "react-router-dom";
@@ -12,15 +12,30 @@ const Body = () => {
   const {
     listOfRestaurants,
     filteredRestaurant,
-    setFilteredRestaurant,
     loading,
+    searchRestaurants,
+    filterTopRated,
+    resetRestaurants,
   } = useRestaurantApi();
 
   const onlineStatus = useOnlineStatus();
-
   const [showTopChains, setShowTopChains] = useState(false);
 
   const RestaurantCardPromoted = WithPromotedLabel(RestaurantCard);
+
+  // 🔥 Listen for Home reset
+  useEffect(() => {
+    const handleReset = () => {
+      setSearchText("");
+      resetRestaurants();
+    };
+
+    window.addEventListener("resetHome", handleReset);
+
+    return () => {
+      window.removeEventListener("resetHome", handleReset);
+    };
+  }, [listOfRestaurants, resetRestaurants]);
 
   const recommendRestaurants = listOfRestaurants.filter(
     (res) => res.info?.avgRating >= 4
@@ -36,6 +51,7 @@ const Body = () => {
 
   return (
     <div className="body">
+      {/* 🔍 Search Section */}
       <div className="flex flex-col sm:flex-row gap-4 p-4">
         <div className="flex w-full sm:w-auto gap-2">
           <input
@@ -49,15 +65,7 @@ const Body = () => {
 
           <button
             className="px-4 py-2 text-sm border rounded-md hover:bg-gray-100 whitespace-nowrap"
-            onClick={() => {
-              const filtered = listOfRestaurants.filter(
-                (res) =>
-                  res.info?.name
-                    ?.toLowerCase()
-                    .includes(searchText.toLowerCase())
-              );
-              setFilteredRestaurant(filtered);
-            }}
+            onClick={() => searchRestaurants(searchText)}
           >
             Search
           </button>
@@ -65,23 +73,20 @@ const Body = () => {
 
         <button
           className="px-4 py-2 text-sm border rounded-md hover:bg-gray-100 whitespace-nowrap"
-          onClick={() => {
-            const filtered = listOfRestaurants.filter(
-              (res) => res.info?.avgRating >= 4.7
-            );
-            setFilteredRestaurant(filtered);
-          }}
+          onClick={filterTopRated}
         >
           Top Rated Restaurants
         </button>
       </div>
 
+      {/* ⭐ Recommend Section */}
       <Recommend
         restaurants={recommendRestaurants}
         show={showTopChains}
         onToggle={() => setShowTopChains((prev) => !prev)}
       />
 
+      {/* 🍽 Restaurant Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 p-4 md:p-6">
         {filteredRestaurant.map((restaurant) => (
           <Link

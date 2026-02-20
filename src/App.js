@@ -7,20 +7,22 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Cart from "./components/Cart";
-
 import { createHashRouter, RouterProvider, Outlet } from "react-router-dom";
 import { Provider } from "react-redux";
 import appstore from "../Redux/AppStore";
 import "../index.css";
+import { useLocation } from "react-router-dom";
 
 /* ---------------- App Layout ---------------- */
 
 const AppLayout = () => {
+    const location = useLocation();
+
     return (
         <Provider store={appstore}>
             <div className="app">
                 <Header />
-                <Outlet />
+                <Outlet key={location.pathname} />
             </div>
         </Provider>
     );

@@ -33,7 +33,9 @@ const Header = () => {
 
                     <div className="flex flex-col md:flex-row gap-4 md:gap-6 text-base font-medium">
                         <div className="flex gap-6">
-                            <Link to="/" className="hover:text-orange-500">
+                            <Link to="/" className="hover:text-orange-500"
+                                onClick={() => window.dispatchEvent(new Event("resetHome"))}
+                            >
                                 Home
                             </Link>
 

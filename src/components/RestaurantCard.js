@@ -70,5 +70,3 @@ export const WithPromotedLabel = (RestaurantCard) => {
 };
 
 export default RestaurantCard;
-
-
