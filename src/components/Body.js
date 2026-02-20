@@ -36,19 +36,19 @@ const Body = () => {
 
   return (
     <div className="body">
-      <div className="flex items-center gap-4 p-4">
-        <div className="flex items-center gap-[2px]">
+      <div className="flex flex-col sm:flex-row gap-4 p-4">
+        <div className="flex w-full sm:w-auto gap-2">
           <input
             type="text"
             data-testid="search-input"
-            className="w-[260px] px-4 py-2 text-sm border border-gray-300 rounded-md outline-none"
+            className="w-full sm:w-64 px-4 py-2 text-sm border border-gray-300 rounded-md outline-none"
             placeholder="Search restaurants"
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
           />
 
           <button
-            className="px-4 py-2 text-sm border rounded-md hover:bg-gray-100"
+            className="px-4 py-2 text-sm border rounded-md hover:bg-gray-100 whitespace-nowrap"
             onClick={() => {
               const filtered = listOfRestaurants.filter(
                 (res) =>
@@ -64,7 +64,7 @@ const Body = () => {
         </div>
 
         <button
-          className="px-4 py-2 text-sm border rounded-md hover:bg-gray-100"
+          className="px-4 py-2 text-sm border rounded-md hover:bg-gray-100 whitespace-nowrap"
           onClick={() => {
             const filtered = listOfRestaurants.filter(
               (res) => res.info?.avgRating >= 4.7
