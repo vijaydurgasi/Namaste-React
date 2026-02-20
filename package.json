@@ -17,15 +17,14 @@
   "license": "ISC",
   "author": "vijay Durgasi",
   "type": "commonjs",
- "scripts": {
-  "start": "parcel index.html",
-  "build": "parcel build index.html",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist",
-  "test": "jest",
-  "watch-test": "jest --watch"
-},
-
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "test": "jest",
+    "watch-test": "jest --watch"
+  },
   "devDependencies": {
     "@babel/core": "^7.28.6",
     "@babel/preset-env": "^7.28.6",
@@ -45,9 +44,13 @@
     "@babel/preset-react": "^7.28.5",
     "@lezer/common": "^1.5.0",
     "@reduxjs/toolkit": "^2.11.2",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "6.22.3"
   }
+ 
 }
